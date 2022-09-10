@@ -43,7 +43,7 @@
     <?php
     $parametro = 'abc';
 
-     switch ($parametro) {
+    switch ($parametro) {
         case 1:
             echo 'Entrou no case 1';
             # code...
@@ -60,12 +60,16 @@
             # code...
             echo 'Entrou no Default';
             break;
-     }
+    }
     ?>
     <hr>
     <?php
-    
+
     ?>
+    <a href="../index.html">
+        <p>voltar</p>
+    </a>
+
 </body>
 
 </html>
