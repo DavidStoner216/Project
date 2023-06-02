@@ -15,30 +15,6 @@
     --switch-bg-url: url(Assets/moon-stars.svg);
 }
 
-@media(prefers-color-scheme: dark) {
-    :root {
-        --text-color: white;
-        --bg-url: url(Assets/Background/bg-mobile-dark.jpg);
-        --stroke-color: rgba(255, 255, 255, 0.5);
-        --surface-color: rgba(255, 255, 255, 0.05);
-        --surface-color-hover: rgba(255, 255, 255, 0.2);
-        --hightligh-color: rgba(255, 255, 255, 0.2);
-        --switch-bg-url: url(Assets/moon-stars.svg);
-    }
-}
-
-@media(prefers-color-scheme: light) {
-    :root {
-        --text-color: black;
-        --bg-url: url(Assets/Background/bg-mobile-light.jpg);
-        --stroke-color: rgba(0, 0, 0, 0.5);
-        --surface-color: rgba(0, 0, 0, 0.05);
-        --surface-color-hover: rgba(0, 0, 0, 0.2);
-        --highlight-color: rgba(0, 0, 0, 0.2);
-        --switch-bg-url: url(Assets/sun.svg);
-
-    }
-}
 
 body {
     /* background-image: url(Assets/Background/bg-mobile-dark\ \(1080x1920\).jpg);
@@ -47,6 +23,7 @@ body {
     background-size: cover; */
     /* background: color image repeat position /size */
     background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
 }
 
 body * {
@@ -54,8 +31,10 @@ body * {
     color: var(--text-color);
 
 }
+
 #container {
-    width: 360px;
+    width: 100%px;
+    max-width: 588px;
     margin: 56px auto;
     padding: 24px;
 }
@@ -137,4 +116,43 @@ footer {
     padding: 24px 0px;
     text-align: center;
     font-size: 14px;
+}
+
+@media(prefers-color-scheme: dark) {
+    :root {
+        --text-color: white;
+        --bg-url: url(Assets/Background/bg-mobile-dark.jpg);
+        --stroke-color: rgba(255, 255, 255, 0.5);
+        --surface-color: rgba(255, 255, 255, 0.05);
+        --surface-color-hover: rgba(255, 255, 255, 0.2);
+        --hightligh-color: rgba(255, 255, 255, 0.2);
+        --switch-bg-url: url(Assets/moon-stars.svg);
+    }
+}
+
+@media(prefers-color-scheme: light) {
+    :root {
+        --text-color: black;
+        --bg-url: url(Assets/Background/bg-mobile-light.jpg);
+        --stroke-color: rgba(0, 0, 0, 0.5);
+        --surface-color: rgba(0, 0, 0, 0.05);
+        --surface-color-hover: rgba(0, 0, 0, 0.2);
+        --highlight-color: rgba(0, 0, 0, 0.2);
+        --switch-bg-url: url(Assets/sun.svg);
+
+    }
+}
+
+@media (min-width: 768px) {
+    @media(prefers-color-scheme: light) {
+        :root {
+            --bg-url: url(Assets/Background/bg-desktop-light.jpg);
+        }
+    }
+
+    @media(prefers-color-scheme: dark) {
+        :root {
+            --bg-url: url(Assets/Background/bg-desktop-dark.jpg);
+        }
+    }
 }

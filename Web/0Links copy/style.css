@@ -10,7 +10,7 @@
     --stroke-color: rgba(255, 255, 255, 0.5);
     --surface-color: rgba(255, 255, 255, 0.05);
     --surface-color-hover: rgba(255, 255, 255, 0.2);
-    --hightligh-color: rgba(255, 255, 255, 0.2);
+    --highlight-color: rgba(255, 255, 255, 0.2);
     --switch-bg-url: url(Assets/moon-stars.svg);
 }
 
@@ -32,6 +32,8 @@ body {
     background-size: cover; */
     /* background: color image repeat position /size */
     background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
+
 }
 
 body * {
@@ -55,6 +57,7 @@ body * {
 
 #profile img {
     width: 112px;
+    height: 112px;
     margin: auto;
 }
 
@@ -84,13 +87,18 @@ body * {
     z-index: 1;
     left: 0;
     transform: translateY(-50%);
+    animation: slide-out 0.4s;
+    transition: outline 0.2s;
 }
 
 .light #switch button {
-    right: 0;
-    left: initial;
+    animation: slide-in 0.4s forwards;
+    /* forwards mantem a animação no TO */
 }
 
+#switch button:hover {
+outline: 8px solid var(--highlight-color);
+}
 #switch span {
     display: block;
     width: 64px;
@@ -159,4 +167,35 @@ footer {
     padding: 24px 0px;
     text-align: center;
     font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    :root {
+        --bg-url: url(Assets/Background/bg-desktop-light.jpg);
+    }
+
+    .light {
+        --bg-url: url(Assets/Background/bg-desktop-dark.jpg);
+    }
+}
+
+/* animation */
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes slide-out {
+    from {
+        left: 50%;
+    }
+
+    to {
+        left: 0;
+    }
 }
