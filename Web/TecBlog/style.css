@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+:root {
+    --cor0: rgb(243, 243, 243);
+    --cor1: rgb(252, 214, 46);
+    --cor2: rgb(104, 104, 104);
+    --cor3: rgb(225, 225, 225);
+
+    --fonte-padrao: arial, verdana, helvetica, sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Trebuchet MS', sans-serif;
+    /* border: #00000018 solid 1px; */
+}
+
+body {
+    background-color: var(--cor0);
+}
+
+header {
+    background-color: var(--cor1);
+    padding: 3vh;
+    margin: auto;
+    text-align: center;
+}
+
+header>h1 {
+    font-weight: 600;
+    font-size: 3.4em;
+    margin: -2px;
+
+}
+
+.blog {
+    color: #fff;
+}
+
+nav {
+    background-color: var(--cor1);
+    padding: 2vw;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+nav a:link,
+nav a:visited {
+    font-weight: 600;
+    color: #fff;
+    margin: auto;
+    padding: 0.7vw 1.5vw;
+    text-decoration: none;
+    transition: 1s;
+}
+
+nav>a:hover {
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.342);
+    border-radius: 1vw;
+    padding: 0.7vw 1.5vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+    color: var(--cor1);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin: 0 auto;
+    width: 940px;
+}
+
+.area-postagem {
+    float: left;
+}
+
+.postagem {
+    width: 650px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 10px 0px 0px;
+}
+
+.postagem>h2 {
+    color: var(--cor1);
+}
+
+.data-post {
+    font: 0.8em;
+    border-bottom: 1px solid #f4f4f4;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.lateral {
+    width: 230px;
+    background-color: #fff;
+    float: left;
+    margin: 20px 0px 0px 10px;
+}
+
+.cont-lateral {
+    margin: 10px;
+}
+
+.cont-lateral>h3 {
+    padding:5px;
+    color: white;
+    background: var(--cor1);
+    border-radius: 5px;
+}
+
+.cont-lateral>p,a{
+    padding: 0px 0px 0px 5px;
+    margin-top: 3px;
+    font-size: 0.9em;
+} 
+.link-lateral > a{
+    padding: 0px 0px 0px 5px;
+    margin-top: 3px;
+    font-size: 1.2em;
+    display: block;
+    text-transform: capitalize;
+
+}
+footer{
+    clear: both;
+    background: var(--cor3);
+    padding: 15px;
+}
+
+
+
+
+
+
+/* .colun {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 100px auto;
+}
+
+.container {
+    border: 1px solid tomato;
+    padding: 20px;
+    width: 150px;
+    margin: auto;
+    margin: 20px;
+    float: left;
+    grid-column: span 2;
+}
+
+.container1 {
+    border: 1px solid tomato;
+    padding: 20px;
+    margin: auto;
+    width: 150px;
+    float: right;
+    grid-column: span 2;
+} */

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu
+        navegador.</p>
+    <!--Conjunto para fotos diferentes para tamnahos de tela diferentes-->
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/img-p.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="img/img-m.JPG" type="Image/jpg">
+        <img src="img/img-g.JPG" alt="Imagem flexivel">
+    </picture>
+    <h1>Vamos reproduzir áudios eh HTML5</h1>
+    <!-- <audio src="midia/Glimpsing Infinity - Asher Fulero.mp3" controls autoplay></audio> -->
+    <!-- compativel com mp3, wav e ogg -->
+    <audio preload="auto" autoplay controls loop>
+        <source src="midia/Snowfall Butterflies - Asher Fulero.mp3" type="audio/mpeg">
+        <source src="midia/Glimpsing Infinity - Asher Fulero.ogg" type="audio/ogg">
+        <source src="midia/Glimpsing Infinity - Asher Fulero.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir o audio. <a href="midia/Glimpsing Infinity - Asher Fulero.mp3">Clique aqui para baixar o arquivo mp3</a></p>
+    </audio>
+    <a href="../index.html">voltar</a>
+</body>
+
+</html>

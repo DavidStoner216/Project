@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Password</legend>
+            <label for="senha">Sua senha:</label>
+            <input type="password" minlength="4" maxlength="10" size="13" pattern="[0-9a-fA-F]{4,8}"
+                title="Coloque Hex no mínimo 4 caracteres e no máximo 8 caracteres" placeholder="Coloque sua senha"
+                autocomplete="new-password">
+            <!-- Autocomplete 
+                * ON : permite a sugestão de um password ja usado ou um novo password
+                * OFF : desabilita a função de autocompletar
+                * NEW-PASSWORD : o navegador irá sugerir uma nova senha-->
+            <!-- Imputmode para colocar um teclado numerico em smartphones -->
+            <!-- Minlength é o numero minimo de caracteres -->
+            <!-- Maxlength é o numero maximo de caracteres -->
+            <!-- Size é ao tamanho do campo -->
+            <!-- Pattern é o formato exigido -->
+            <button type="submit">enviar</button>
+        </fieldset>
+    </form>
+    <br>
+    <form action="">
+        <fieldset>
+            <legend>Email</legend>
+            <datalist id="emailslist">
+                <option>davidstoner@gmail.com</option>
+            </datalist>
+            <input type="email" placeholder="Email" multiple pattern=".+@gmail\.com" list="emailslist">
+            <!-- Multiple permite colocar 1 ou mais emais colocando virgula -->
+            <button type="submit">Enviar!</button>
+        </fieldset>
+    </form>
+    <br>
+    <form action="">
+        <fieldset>
+            <legend>Urls</legend>
+            <input type="url" pattern=".*\.com\.br.*" placeholder="https://www.com.br">
+            <!-- spellcheck habilita a verificação ortografica para este input -->
+            <button type="submit">Enviar!</button>
+        </fieldset>
+    </form>
+    <br>
+    <form action="" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>File</legend>
+            <input type="file" accept=".doc" multiple>
+            <!-- Accept descreve quais tipos de arquivos serão aceitos
+                -Exemplo : .doc, .docx, .pdf, .audio/*, image/png, .png -->
+            <button type="submit">Enviar!</button>
+        </fieldset>
+    </form>
+    <br>
+    <form action="">
+        <fieldset>
+            <legend>Color</legend>
+            <!--É possivel usar um datalist -->
+            <input type="color">
+            <button type="submit">Enviar!</button>
+        </fieldset>
+    </form>
+    <br>
+    <form action="">
+        <fieldset>
+            <legend>Checkbox</legend>
+            <div>
+                <input type="checkbox" name="interesting" id="coding" checked>
+                <label for="coding">Coding</label>
+                <!-- checked é um atributo booleano -->
+                <!-- <button type="submit">Enviar!</button> -->
+            </div>
+            <div>
+                <input type="checkbox" name="interesting" id="music">
+                <label for="music">Music</label>
+            </div>
+        </fieldset>
+    </form>
+    <br>
+    <form action="">
+        <fieldset>
+            <legend>Radio</legend>
+            Bora tomar um café?<br>
+            <label for="yep">Sim</label>
+            <input type="radio" name="coffee" id="yep">
+
+            <label for="nono">Não</label>
+            <input type="radio" name="coffee" id="nono" checked>
+        </fieldset>
+    </form>
+    <br>
+    <form action="">
+        <fieldset>
+            <legend>Textarea</legend>
+            <label for="mensage">menssagem</label>
+            <br>
+            <textarea name="mensage" id="mensage" cols="30" rows="10"></textarea>
+            <!-- wrap permtite que o texto não sofra uma quebra de linha automaticamente -->
+        </fieldset>
+    </form>
+    <br>
+    <form action="">
+        <fieldset>
+            <legend>Select e Option</legend>
+            <label for="carselect">Qual o modelo do carro?</label>
+            <select name="carselect" id="carselect" multiple>
+                <option value="">Selecione o modelo</option>
+                <option value="Fiat">Uno</option>
+                <option value="Audi">A3</option>
+                <option value="Bmw">X6</option>
+            </select>
+        </fieldset>
+    </form>
+    <form action="pets">
+        <fieldset>
+            <legend>Optgroup</legend>
+            <select name="pets" id="pets" multiple>
+                <optgroup label="4-legged pets">
+                    <option value="dog">Dog</option>
+                    <option value="Cat">Cat</option>
+                    <option value="hamster">Hamster</option>
+                </optgroup>
+                <optgroup label="Flying pets">
+                    <option value="parrot">Parrot</option>
+                    <option value="macaw">Macaw</option>
+                    <option value="albatross">Albatross</option>
+                </optgroup>
+            </select>
+        </fieldset>
+    </form>
+    <form action="">
+        <fieldset>
+            <legend>Search</legend>
+            <datalist id="searchterms">
+                <option value="mac">mac</option>
+                <option value="win">win</option>
+                <option value="lin">lin</option>
+            </datalist>
+            <label for="">pesquisar pelo ID</label>
+            <input type="search" name="q" id="search" list="searchterms" placeholder="Pesquise seu termo" pattern="[0-9]{2}"
+            title="Digite o numero do id : 99">
+            <button>search</button>
+        </fieldset>
+    </form>
+
+    <a href="contatos.html">Contatos</a>
+    <a href="../index.html">Voltar</a>
+</body>
+
+</html>

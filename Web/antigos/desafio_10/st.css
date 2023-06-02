@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+body {
+    background-color: #84E1AD;
+}
+
+header {
+    color: white;
+    background-image: linear-gradient(#3BD47F, #1A5C38);
+    text-align: center;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.250);
+}
+
+header>h1 {
+    color: white;
+    padding: 1.5em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.250);
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+header>p {
+    margin: 0px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.250);
+}
+
+nav {
+    text-align: left;
+    padding: 3.5em 0em 0.8em 0em;
+    margin: 0px;
+}
+
+nav>a {
+    /* padding: 0.6em 1em; */
+    padding: 1% 1.5%;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav>a:hover {
+    /* padding: 0.6em 1em; */
+    padding: 1% 1.5%;
+    transition: 0.3s;
+    color: #033319;
+    background-color: rgba(51, 255, 0, 0.13);
+    border-radius: 0.2em;
+}
+
+main {
+    border-radius: 0em 0em 0.8em 0.8em;
+    background-color: white;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.250);
+    margin: auto;
+    max-width: 60em;
+}
+
+h1 {
+    padding: 3% 3% 0% 3%;
+    font-family: "idroid", arial, sans-serif;
+    color: #0b6635;
+}
+
+main>p {
+    margin: 3%;
+    text-align: justify;
+    text-indent: 4%;
+}
+
+main>h2 {
+    margin: 0% 3% 0% 3%;
+    color: #0b6635;
+    font-family: "idroid", arial, sans-serif;
+    background-image: linear-gradient(90deg, #3bd4804d, #ffffff00);
+}
+
+strong {
+    color: #0b6635;
+}
+
+a {
+    color: #0b6635;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+iframe {
+    display: block;
+    background-color: #034b25;
+    margin: auto;
+}
+
+section {
+    margin: 2em;
+    background-color: #cff5df;
+    border-radius: 0.8em 0.8em 0.8em 0.8em;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.250);
+}
+
+section>h3 {
+    margin: 0%;
+    border-radius: 0.8em 0.8em 0em 0em;
+    color: white;
+    padding: 1.5%;
+    background-color: #53cc88;
+}
+
+section>p {
+    margin: 3%;
+    text-align: justify;
+    text-indent: 4%;
+}
+footer{
+    padding: 1%;
+    background-color: #033319;
+    color: white;
+    margin-bottom: 0px;
+}
