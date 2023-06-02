@@ -171,11 +171,11 @@ footer {
 
 @media (min-width: 768px) {
     :root {
-        --bg-url: url(Assets/Background/bg-desktop-light.jpg);
+        --bg-url: url(Assets/Background/bg-desktop-dark.jpg);
     }
 
     .light {
-        --bg-url: url(Assets/Background/bg-desktop-dark.jpg);
+        --bg-url: url(Assets/Background/bg-desktop-light.jpg);
     }
 }
 
