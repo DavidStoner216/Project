@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
+        integrity="sha512-UDJtJXfzfsiPPgnI5S1000FPLBHMhvzAMX15I+qG2E2OAzC9P1JzUwJOfnypXiOH7MRPaqzhPbBGDNNj7zBfoA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Museu Nacional</title>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <section id="head">
+                <div id="logo">
+                    <a href="index.html" class="logo">Museu<span class="orange""> Nacional</span></a></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Exposição</a></li>
+                        <li><a href="">Acervo</a></li>
+                        <li><a href="">Vídeos</a></li>
+                        <li><a href="">Fotos</a></li>
+                        <li><a href="">Contatos</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+        <div id="content">
+            <main>
+                <section>
+                    <img src="assets/museu.png" alt="">
+                </section>
+            </main>
+            <aside>
+                <section>
+                    <img src="assets/depoimento.png" alt="">
+                </section>
+                <section id="visit">
+                    <h4>Faça uma visita</h4>
+                    <form action="">
+                        <fieldset>
+                            <legend>Selecione uma data</legend>
+                            <label for="date">Data</label>
+                            <input type="date" id="date" name="date">
+                            <label for="qtd">Quantidade</label>
+                            <input type="number" id="qtd" name="qtd" value="1">
+                        </fieldset>
+                        <input type="submit" value="Verificar disponibilidade">
+                    </form>
+                </section>
+            </aside>
+        </div>
+    </div>
+</body>
+
+</html>

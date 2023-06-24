@@ -6,7 +6,7 @@
 }
 
 :root {
-    --bkp: #EAEAEA;
+    --bkp: #ff9239db;
     --bkr: #FFFFFF;
     --tittles: #1B1B1B;
     --footer: #8F8F8F;
@@ -30,20 +30,21 @@ main {
     max-width: 750px;
     padding: 20px;
     background-color: var(--bkr);
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 h1 {
     font-size: 28px;
+    padding: 20px 0px 20px 0px;
 }
 
 h2 {
     font-size: 20px;
+    padding: 20px 0px 10px 0px;
 }
 
 h1,
 h2 {
-    padding: 20px 0px 5px 0px;
     text-align: center;
     color: var(--tittles);
     text-transform: uppercase;
@@ -83,12 +84,15 @@ p {
 footer {
     text-align: center;
     padding: 30px 0px 10px 0px;
+    font-size: 12px;
+    color: var(--bkr);
 
 }
 
-footer,
 figcaption {
-
     color: var(--footer);
     font-size: 12px;
+}
+footer > a{
+    color: var(--bkr);
 }
