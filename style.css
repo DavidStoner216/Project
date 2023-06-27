@@ -11,7 +11,7 @@
     --stroke-color: rgba(255, 255, 255, 0.5);
     --surface-color: rgba(255, 255, 255, 0.05);
     --surface-color-hover: rgba(255, 255, 255, 0.2);
-    --hightligh-color: rgba(255, 255, 255, 0.2);
+    --highlight-color: rgba(255, 255, 255, 0.2);
     --switch-bg-url: url(Assets/moon-stars.svg);
 }
 
@@ -88,6 +88,8 @@ ul li a {
 }
 
 ul li a:hover {
+    text-decoration: none;
+    color: var(--text-color);
     background: var(--surface-color-hover);
     border: 1.5px solid var(--text-color);
 }
@@ -126,7 +128,7 @@ footer {
         --stroke-color: rgba(255, 255, 255, 0.5);
         --surface-color: rgba(255, 255, 255, 0.05);
         --surface-color-hover: rgba(255, 255, 255, 0.2);
-        --hightligh-color: rgba(255, 255, 255, 0.2);
+        --highlight-color: rgba(255, 255, 255, 0.2);
         --switch-bg-url: url(Assets/moon-stars.svg);
     }
 }
