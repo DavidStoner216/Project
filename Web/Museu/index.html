@@ -13,7 +13,6 @@
 </head>
 
 <body>
-    <div id="container">
         <header>
             <section id="head">
                 <div id="logo">
@@ -36,6 +35,44 @@
                 <section>
                     <img src="assets/museu.png" alt="">
                 </section>
+                <section id="conheca">
+                    <article id="video">
+                        <h3>Vídeo: Conheça o Museu</h3>
+                        <iframe width="310" height="170" src="https://www.youtube.com/embed/RGUYb-hivrc" title="Uma visita mediada ao Museu Nacional - UFRJ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </article>
+                    <article id="local">
+                        <h3>Mapa: Encontre o Museu</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14700.825245036422!2d-43.2265289!3d-22.90576!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e0!3m2!1spt-BR!2sbr!4v1687821376078!5m2!1spt-BR!2sbr" width="310" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </article>
+                    <article id="exposicao">
+                        <h3>Exposições</h3>
+                        <ul>
+                            <li>
+                                <a href="">Os assustadores insetos</a>
+                            </li>
+                            <li>
+                                <a href="">O cranio de Luzia, a mulher mais antiga do Brasil</a>
+                            </li>
+                            <li>
+                                <a href="">Preguiça gigante e tigre-dentes-de-sabre</a>
+                            </li>
+                            <li>
+                                <a href="">Tereza Cristina: A Imperatriz arqueóloga</a>
+                            </li>
+                            <li>
+                                <a href="">Arte com dinossauros - Paleoarte</a>
+                            </li>
+                            <li>
+                                <a href=""><strong>Veja todos os (65)</strong></a>
+                            </li>
+                        </ul>
+                    </article>
+                    <article id="historia">
+                        <h3>200 Anos de História</h3>
+                        <p>Numa ponta que avançava sobre o mar, posteriormente conhecida como Ponta do Calabouço, entre as praias de Piaçaba e Santa Luzia, no centro histórico do Rio de Janeiro, os portugueses construíram em 1603 a Fortaleza de Santiago, origem do conjunto arquitetônico que hoje abriga o Museu Histórico Nacional.</p>
+                        <a href=""><strong>Leia mais</strong></a>
+                    </article>
+                </section>
             </main>
             <aside>
                 <section>
@@ -47,16 +84,54 @@
                         <fieldset>
                             <legend>Selecione uma data</legend>
                             <label for="date">Data</label>
-                            <input type="date" id="date" name="date">
+                            <input class="campo" type="date" id="date" name="date">
                             <label for="qtd">Quantidade</label>
-                            <input type="number" id="qtd" name="qtd" value="1">
+                            <input class="campo menos" type="number" id="qtd" name="qtd" value="1">
                         </fieldset>
-                        <input type="submit" value="Verificar disponibilidade">
+                        <input class="btn" type="submit" value="Verificar disponibilidade">
                     </form>
                 </section>
+                <section id="galery">
+                    <h4>Galeria de Fotos</h4>
+                    <div id="polaroids">
+                        <div class="polaroid">
+                            <div class="block rotate"></div>
+                            <div class=" block">
+                                <a href=""><img src="assets/imagem1.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="polaroid">
+                            <div class="block rotate"></div>
+                            <div class=" block">
+                                <a href=""><img src="assets/imagem2.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="polaroid">
+                            <div class="block rotate"></div>
+                            <div class=" block">
+                                <a href=""><img src="assets/imagem3.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="polaroid">
+                            <div class="block rotate"></div>
+                            <div class=" block">
+                                <a href=""><img src="assets/imagem4.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </aside>
+            <hr>
+            <footer>
+                <p><a href="">Home</a>
+                    <a href="">Exposição</a>
+                    <a href="">Acervo</a>
+                    <a href="">Vídeos</a>
+                    <a href="">Fotos</a>
+                    <a href="">Contatos</a></p>
+                <p>Feito com amor 💙 <a href="../../index.html">David</a></p>
+        </footer>
         </div>
-    </div>
 </body>
 
 </html>
