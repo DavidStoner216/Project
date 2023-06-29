@@ -48,9 +48,6 @@ body {
     /* overflow-x: hidden; */
 }
 
-.redondo {
-    border-radius: 15px;
-}
 
 
 /* cabeçalho */
@@ -113,10 +110,12 @@ li a.nav-link:hover {
 #conteudo {
     margin-top: -70px;
 }
-.bgf{
+
+.bgf {
     background: var(--c2);
 }
-.bgb{
+
+.bgb {
     background: var(--c4);
     color: var(--c2);
 }
@@ -132,6 +131,10 @@ li a.nav-link:hover {
     position: absolute;
     z-index: 0;
     rotate: -5deg;
+}
+
+.redondo {
+    border-radius: 15px;
 }
 
 hr#separet {
