@@ -1,0 +1,144 @@
+:root {
+    --c0: #FFFFFF;
+    --c1: #F2E3D5;
+    --c2: #F2C094;
+    --c3: #bb5f0e;
+    --c4: #593B16;
+    --c5: #311e07;
+    --c6: #000000;
+    --font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+/* Geral */
+
+p,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--c4);
+}
+
+a {
+    text-decoration: none;
+    color: var(--c3);
+    transition: ease-in-out 0.3s;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--c4);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--c2);
+    transition: ease-in-out 0.3s;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: var(--c1);
+}
+
+body {
+    background: var(--c1);
+    /* overflow-x: hidden; */
+}
+
+.redondo {
+    border-radius: 15px;
+}
+
+
+/* cabeçalho */
+#header {
+    width: 100%;
+    padding: 0 0 80px 0;
+    background: var(--c5);
+    box-shadow: 1px 1px 5px var(--c5);
+}
+
+#logo {
+    color: var(--c1);
+    font-weight: 400;
+}
+
+.orange {
+    color: var(--c3);
+}
+
+#navul {
+    margin-inline-start: auto;
+    color: var(--c3);
+}
+
+.btnbg {
+    padding: 5px 10px;
+    transition: ease-in-out all .3s;
+}
+
+.btnbg:hover {
+    background: var(--c4);
+    color: #F2C094;
+}
+
+.navbtn {
+    color: var(--c3);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btntheme {
+    padding: 1px;
+    border-radius: 2px;
+    margin: auto;
+    width: 100%;
+    background-color: var(--c3);
+}
+
+li a.nav-link {
+    margin: 2px;
+    border-radius: 10px;
+    transition: ease-in-out all 0.3s;
+}
+
+li a.nav-link:hover {
+    background: var(--c4);
+}
+
+/* conteudo */
+#conteudo {
+    margin-top: -70px;
+}
+.bgf{
+    background: var(--c2);
+}
+.bgb{
+    background: var(--c4);
+    color: var(--c2);
+}
+
+.block {
+    position: relative;
+    width: 110px;
+    height: 120px;
+    background: var(--c0);
+}
+
+.rotate {
+    position: absolute;
+    z-index: 0;
+    rotate: -5deg;
+}
+
+hr#separet {
+    background: linear-gradient(90deg, #00000000, var(--c2), var(--c2), #00000000);
+    margin: 30px auto;
+    width: 70%;
+    height: 1px;
+    border: none;
+    border-radius: 100%;
+}

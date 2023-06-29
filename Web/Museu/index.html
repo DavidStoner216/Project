@@ -2,8 +2,12 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
@@ -13,125 +17,164 @@
 </head>
 
 <body>
-        <header>
-            <section id="head">
-                <div id="logo">
-                    <a href="index.html" class="logo">Museu<span class="orange""> Nacional</span></a></h1>
+    <header class="">
+        <!-- <section id="head">
+            <div id="logo">
+                <a href="index.html" class="logo">Museu<span class="orange"> Nacional</span></a>
                 </div>
-                <nav>
+                <nav class="">
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Exposição</a></li>
-                        <li><a href="">Acervo</a></li>
-                        <li><a href="">Vídeos</a></li>
-                        <li><a href="">Fotos</a></li>
-                        <li><a href="">Contatos</a></li>
+                        <li class="nav-item"><a href="">Home</a></li>
+                        <li class="nav-item"><a href="">Exposição</a></li>
+                        <li class="nav-item"><a href="">Acervo</a></li>
+                        <li class="nav-item"><a href="">Vídeos</a></li>
+                        <li class="nav-item"><a href="">Fotos</a></li>
+                        <li class="nav-item"><a href="">Contatos</a></li>
                     </ul>
                 </nav>
-            </section>
-        </header>
-        <div id="content">
-            <main>
-                <section>
-                    <img src="assets/museu.png" alt="">
-                </section>
-                <section id="conheca">
-                    <article id="video">
-                        <h3>Vídeo: Conheça o Museu</h3>
-                        <iframe width="310" height="170" src="https://www.youtube.com/embed/RGUYb-hivrc" title="Uma visita mediada ao Museu Nacional - UFRJ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </article>
-                    <article id="local">
-                        <h3>Mapa: Encontre o Museu</h3>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14700.825245036422!2d-43.2265289!3d-22.90576!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e0!3m2!1spt-BR!2sbr!4v1687821376078!5m2!1spt-BR!2sbr" width="310" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </article>
-                    <article id="exposicao">
-                        <h3>Exposições</h3>
-                        <ul>
-                            <li>
-                                <a href="">Os assustadores insetos</a>
-                            </li>
-                            <li>
-                                <a href="">O cranio de Luzia, a mulher mais antiga do Brasil</a>
-                            </li>
-                            <li>
-                                <a href="">Preguiça gigante e tigre-dentes-de-sabre</a>
-                            </li>
-                            <li>
-                                <a href="">Tereza Cristina: A Imperatriz arqueóloga</a>
-                            </li>
-                            <li>
-                                <a href="">Arte com dinossauros - Paleoarte</a>
-                            </li>
-                            <li>
-                                <a href=""><strong>Veja todos os (65)</strong></a>
-                            </li>
+            </section> -->
+            <nav id="head" class="navbar navbar-expand-lg navbar-dark">
+                <div id="logo">
+                    <a href="index.html" class="logo">Museu<span class="orange"> Nacional</span></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+                        <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Exposição</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Acervo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Vídeos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Fotos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Contatos</a></li>
                         </ul>
-                    </article>
-                    <article id="historia">
-                        <h3>200 Anos de História</h3>
-                        <p>Numa ponta que avançava sobre o mar, posteriormente conhecida como Ponta do Calabouço, entre as praias de Piaçaba e Santa Luzia, no centro histórico do Rio de Janeiro, os portugueses construíram em 1603 a Fortaleza de Santiago, origem do conjunto arquitetônico que hoje abriga o Museu Histórico Nacional.</p>
-                        <a href=""><strong>Leia mais</strong></a>
-                    </article>
-                </section>
-            </main>
-            <aside>
-                <section>
-                    <img src="assets/depoimento.png" alt="">
-                </section>
-                <section id="visit">
-                    <h4>Faça uma visita</h4>
-                    <form action="">
-                        <fieldset>
-                            <legend>Selecione uma data</legend>
-                            <label for="date">Data</label>
-                            <input class="campo" type="date" id="date" name="date">
-                            <label for="qtd">Quantidade</label>
-                            <input class="campo menos" type="number" id="qtd" name="qtd" value="1">
-                        </fieldset>
-                        <input class="btn" type="submit" value="Verificar disponibilidade">
-                    </form>
-                </section>
-                <section id="galery">
-                    <h4>Galeria de Fotos</h4>
-                    <div id="polaroids">
-                        <div class="polaroid">
-                            <div class="block rotate"></div>
-                            <div class=" block">
-                                <a href=""><img src="assets/imagem1.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="polaroid">
-                            <div class="block rotate"></div>
-                            <div class=" block">
-                                <a href=""><img src="assets/imagem2.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="polaroid">
-                            <div class="block rotate"></div>
-                            <div class=" block">
-                                <a href=""><img src="assets/imagem3.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="polaroid">
-                            <div class="block rotate"></div>
-                            <div class=" block">
-                                <a href=""><img src="assets/imagem4.jpg" alt=""></a>
-                            </div>
+                </div>
+            </nav>
+    </header>
+    <div id="content">
+        <main>
+            <section>
+                <img src="assets/museu.png" alt="">
+            </section>
+            <section id="conheca">
+                <article id="video">
+                    <h3>Vídeo: Conheça o Museu</h3>
+                    <iframe width="310" height="170" src="https://www.youtube.com/embed/RGUYb-hivrc"
+                        title="Uma visita mediada ao Museu Nacional - UFRJ" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </article>
+                <article id="local">
+                    <h3>Mapa: Encontre o Museu</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14700.825245036422!2d-43.2265289!3d-22.90576!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e0!3m2!1spt-BR!2sbr!4v1687821376078!5m2!1spt-BR!2sbr"
+                        width="310" height="170" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </article>
+                <article id="exposicao">
+                    <h3>Exposições</h3>
+                    <ul>
+                        <li>
+                            <a href="">Os assustadores insetos</a>
+                        </li>
+                        <li>
+                            <a href="">O cranio de Luzia, a mulher mais antiga do Brasil</a>
+                        </li>
+                        <li>
+                            <a href="">Preguiça gigante e tigre-dentes-de-sabre</a>
+                        </li>
+                        <li>
+                            <a href="">Tereza Cristina: A Imperatriz arqueóloga</a>
+                        </li>
+                        <li>
+                            <a href="">Arte com dinossauros - Paleoarte</a>
+                        </li>
+                        <li>
+                            <a href=""><strong>Veja todos os (65)</strong></a>
+                        </li>
+                    </ul>
+                </article>
+                <article id="historia">
+                    <h3>200 Anos de História</h3>
+                    <p>Numa ponta que avançava sobre o mar, posteriormente conhecida como Ponta do
+                        Calabouço, entre as praias de Piaçaba e Santa Luzia, no centro histórico do Rio
+                        de Janeiro, os portugueses construíram em 1603 a Fortaleza de Santiago, origem
+                        do conjunto arquitetônico que hoje abriga o Museu Histórico Nacional.</p>
+                    <a href=""><strong>Leia mais</strong></a>
+                </article>
+            </section>
+        </main>
+        <aside>
+            <section>
+                <img src="assets/depoimento.png" alt="">
+            </section>
+            <section id="visit">
+                <h4>Faça uma visita</h4>
+                <form action="">
+                    <fieldset>
+                        <legend>Selecione uma data</legend>
+                        <label for="date">Data</label>
+                        <input class="campo" type="date" id="date" name="date">
+                        <label for="qtd">Quantidade</label>
+                        <input class="campo menos" type="number" id="qtd" name="qtd" value="1">
+                    </fieldset>
+                    <input class="btn" type="submit" value="Verificar disponibilidade">
+                </form>
+            </section>
+            <section id="galery">
+                <h4>Galeria de Fotos</h4>
+                <div id="polaroids">
+                    <div class="polaroid">
+                        <div class="block rotate"></div>
+                        <div class=" block">
+                            <a href=""><img src="assets/imagem1.jpg" alt=""></a>
                         </div>
                     </div>
-                </section>
-            </aside>
-            <hr>
-            <footer>
-                <p><a href="">Home</a>
-                    <a href="">Exposição</a>
-                    <a href="">Acervo</a>
-                    <a href="">Vídeos</a>
-                    <a href="">Fotos</a>
-                    <a href="">Contatos</a></p>
-                <p>Feito com amor 💙 <a href="../../index.html">David</a></p>
+                    <div class="polaroid">
+                        <div class="block rotate"></div>
+                        <div class=" block">
+                            <a href=""><img src="assets/imagem2.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="polaroid">
+                        <div class="block rotate"></div>
+                        <div class=" block">
+                            <a href=""><img src="assets/imagem3.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="polaroid">
+                        <div class="block rotate"></div>
+                        <div class=" block">
+                            <a href=""><img src="assets/imagem4.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </aside>
+        <hr>
+        <footer>
+            <p><a href="">Home</a>
+                <a href="">Exposição</a>
+                <a href="">Acervo</a>
+                <a href="">Vídeos</a>
+                <a href="">Fotos</a>
+                <a href="">Contatos</a>
+            </p>
+            <p>Feito com amor 💙 <a href="../../index.html">David</a></p>
         </footer>
-        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

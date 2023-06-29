@@ -53,13 +53,14 @@ p {
     color: var(--c3);
 }
 
-nav>ul {
+nav ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+
 }
 
-nav>ul>li>a {
+nav ul li a {
     text-decoration: none;
     color: var(--c1);
     padding: 10px;
@@ -68,7 +69,7 @@ nav>ul>li>a {
     transition: ease-in-out 0.4s;
 }
 
-nav>ul>li>a:hover {
+nav ul li a:hover {
     color: var(--c4);
     background: var(--c2);
 }
@@ -109,8 +110,6 @@ article {
     margin: 27px 0 0 0;
     text-align: justify;
 }
-
-article iframe {}
 
 article ul {
     margin-left: 27px;
