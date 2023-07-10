@@ -1,0 +1,121 @@
+body {
+    background:
+        url(../imagens/capa.png),
+        url(../imagens/ruido.png),
+        linear-gradient(50deg, #ff4169, #7c26f8);
+    background-attachment: fixed;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+html,
+body,
+#home {
+    height: 100%;
+}
+
+nav.navbar-opacity {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #7fffd4;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-light .navbar-toggler:hover {
+    color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(59, 248, 255, 0.1);
+}
+
+button .text-hover {
+    color: white;
+    transition: all 0.3s;
+}
+
+button:focus {
+    outline: none;
+}
+
+button i:hover {
+    color: aquamarine;
+}
+
+.divide {
+    width: 1px;
+    height: 15px;
+    background: white;
+}
+.btn-custon{
+    color: white;
+    border-radius: 500px;
+    text-transform: uppercase;
+    transition: backgraund 0.4s, color 0.4s;
+    padding: 10px 15px;
+}
+.btn-purple{
+    background: #7c26f8;
+    transition: 0.4s;
+}
+.btn-purple:hover{
+    background: #6207e3;
+    color: white;
+}
+.btn-white{
+    border: 2px solid white;
+    transition: 0.4s;
+}
+.btn-white:hover{
+    background: #ffffff;
+    color: #000000;
+}
+
+h1 {
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    color: white;
+}
+/* Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
+@media (max-width: 575.98px) {
+    .btn-custon{
+        margin: 10px 15px;
+    }
+}
+
+/* Dispositivos small (telefones em modo paisagem, com 576px ou mais) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
+        font-size: 3em;
+    }
+    .btn-custon{
+        margin: 10px 15px;
+    }
+}
+
+/* Dispositivos médios (tablets com 768px ou mais) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1 {
+        font-size: 4em;
+    }
+}
+
+/* Dispositivos large (desktops com 992px ou mais) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h1 {
+        font-size: 5em;
+    }
+}
+
+/* Dispositivos extra large (desktops grandes com 1200px ou mais) */
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 6em;
+    }
+}
