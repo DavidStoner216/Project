@@ -11,6 +11,34 @@ html,
 body,
 #home {
     height: 100%;
+    overflow-x: hidden;
+}
+
+#servicos {
+    padding: 20px 0;
+    background: #ffffff;
+}
+
+#servicos h2,
+#servicos h3 {
+    color: #7c26f8;
+}
+
+#recursos {
+    padding: 20px 0;
+    color: white;
+}
+
+#recursos h2 {
+    color: #bef1f6;
+}
+
+#recursos h3 {
+    color: #7fffd4;
+}
+
+#rodape {
+    background: #000000;
 }
 
 nav.navbar-opacity {
@@ -53,26 +81,31 @@ button i:hover {
     height: 15px;
     background: white;
 }
-.btn-custon{
+
+.btn-custon {
     color: white;
     border-radius: 500px;
     text-transform: uppercase;
     transition: backgraund 0.4s, color 0.4s;
     padding: 10px 15px;
 }
-.btn-purple{
+
+.btn-purple {
     background: #7c26f8;
     transition: 0.4s;
 }
-.btn-purple:hover{
+
+.btn-purple:hover {
     background: #6207e3;
     color: white;
 }
-.btn-white{
+
+.btn-white {
     border: 2px solid white;
     transition: 0.4s;
 }
-.btn-white:hover{
+
+.btn-white:hover {
     background: #ffffff;
     color: #000000;
 }
@@ -82,9 +115,62 @@ h1 {
     letter-spacing: -0.05em;
     color: white;
 }
+
+h2 {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+}
+
+footer h4 {
+    color: #919496;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+footer ul{
+    list-style: none;
+}
+footer ul a {
+    color: white;
+    font-size: 0.8em;
+}
+
+footer ul a:hover {
+    color: #7fffd4;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+footer ul li.caixa a {
+    font-size: 24px;
+    background: rgba(255, 255, 255, 0.201);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    margin: 8px;
+
+}
+
+.rotation {
+    rotate: 30deg;
+    padding-left: 80px;
+    padding-top: 40px;
+    margin-bottom: 100px;
+}
+
 /* Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
 @media (max-width: 575.98px) {
-    .btn-custon{
+    .btn-custon {
         margin: 10px 15px;
     }
 }
@@ -94,7 +180,8 @@ h1 {
     h1 {
         font-size: 3em;
     }
-    .btn-custon{
+
+    .btn-custon {
         margin: 10px 15px;
     }
 }
