@@ -128,14 +128,19 @@ h3 {
     font-weight: 700;
     letter-spacing: -0.05em;
 }
-
+footer{
+    position: relative;
+}
 footer h4 {
     color: #919496;
     font-size: 0.8em;
     text-transform: uppercase;
+    margin-top: 20px;
 }
 footer ul{
     list-style: none;
+    display: flex;
+    padding: 0;
 }
 footer ul a {
     color: white;
@@ -165,7 +170,6 @@ footer ul li.caixa a {
     rotate: 30deg;
     padding-left: 80px;
     padding-top: 40px;
-    margin-bottom: 100px;
 }
 
 /* Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
