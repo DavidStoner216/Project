@@ -1,0 +1,143 @@
+:root {
+    --d: #000000;
+    --bd: #00084d;
+    --bdo: #000940dc;
+    --bo: #024873;
+    --b: #0511F2;
+    --bl: #009FE3;
+    --w: #ffffff;
+    --td: #15336D;
+    --tl: #00F8E8;
+    --po: hsla(0, 0%, 0%, 0.5);
+    --gdt: linear-gradient(to top, #05001b9b, 2%, #00084da9 59.42857265472412%, 79.71428632736206%, #040d5aa5 100%);
+    --bdg: linear-gradient(to top, hsla(251, 100%, 5%, 0.65), 2%, hsla(234, 100%, 15%, 0.65) 59.42857265472412%, 79.71428632736206%, hsla(234, 91%, 18%, 0.65) 100%);
+}
+
+/* cabeçalho */
+* {
+    #topo {
+        background: var(--bd);
+        color: var(--w);
+    }
+
+
+    .offcanvas {
+        background-color: var(--bd);
+        color: var(--w);
+    }
+
+    .offcanvas-header {
+        color: var(--w);
+    }
+
+    .navbar-toggler {
+        padding: 0px 4px;
+        border: none;
+    }
+
+    .navbar-toggler:focus {
+        text-decoration: none;
+        outline: 0;
+        box-shadow: none;
+    }
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link,
+    .navbar-nav .nav-link.show {
+        color: var(--w);
+        border-radius: 10px;
+        text-align: end;
+        margin-left: 6px;
+        padding: 5px 8px;
+
+    }
+
+    .navbar-nav .nav-link.active:hover,
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.nav-link.show:hover {
+        color: var(--tl);
+        background: var(--bo);
+    }
+
+    .dropdown-menu {
+        border-radius: 10px;
+        background: var(--po);
+        backdrop-filter: blur(20px);
+    }
+
+    .dropdown-item {
+        transition: 0.4s;
+        text-align: center;
+        color: var(--tl);
+
+    }
+
+    .dropdown-item:hover {
+        color: var(--tl);
+        background: var(--bdo);
+    }
+
+    #menu-bar,
+    #menu-bar1 {
+        width: 45px;
+        height: 45px;
+    }
+
+    #bar1,
+    #bar11 {
+        transform: translateY(-6px);
+        transition: all 1.5s ease-in-out;
+    }
+
+    #bar2 {
+        transition: 1.5s ease-in-out;
+    }
+
+    #bar22 {
+        transition: 3.5s ease-in-out;
+
+    }
+
+    #bar3,
+    #bar33 {
+        transform: translateY(6px);
+        transition: all 1.5s ease-out;
+    }
+
+    .change #bar1,
+    .change #bar11 {
+        transform: translateY(3px) rotateZ(135deg);
+
+    }
+
+    .change #bar2 {
+        opacity: 0;
+        transform: translateX(250px);
+    }
+
+    .change #bar22 {
+        opacity: 0;
+        transform: translateX(250px);
+    }
+
+    .change #bar3,
+    .change #bar33 {
+        transform: translateY(-3px) rotateZ(45deg);
+    }
+
+    .change #menu-bar,
+    .change #menu-bar1 {
+        z-index: 999;
+        position: relative;
+    }
+
+    .bar {
+        height: 3px;
+        padding: 0;
+        width: 100%;
+        background-color: var(--bl);
+        display: block;
+        border-radius: 5px;
+        ;
+    }
+}
