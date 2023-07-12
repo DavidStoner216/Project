@@ -106,7 +106,7 @@
 
     .change #bar1,
     .change #bar11 {
-        transform: translateY(3px) rotateZ(135deg);
+        transform: translateY(3px) rotateZ(-45deg);
 
     }
 
