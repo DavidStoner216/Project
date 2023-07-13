@@ -146,5 +146,5 @@
     height: 100vh;
     background:
         var(--gdt),
-        url(../assets/img/carro-carrossel.jpg) fixed center/cover
+        url(assets/img/carro-carrossel.jpg) fixed center/cover
 }
