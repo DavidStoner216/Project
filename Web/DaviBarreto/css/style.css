@@ -8,7 +8,7 @@
     --w: #ffffff;
     --td: #15336D;
     --tl: #00F8E8;
-    --po: hsla(0, 0%, 0%, 0.502);
+    --po: hsla(0, 0%, 100%, 0.239);
     --gdt: linear-gradient(to top, #05001b9b, 2%, #00084da9 59.42857265472412%, 79.71428632736206%, #040d5aa5 100%);
     --bdg: linear-gradient(to top, hsla(251, 100%, 5%, 0.65), 2%, hsla(234, 100%, 15%, 0.65) 59.42857265472412%, 79.71428632736206%, hsla(234, 91%, 18%, 0.65) 100%);
 }
@@ -146,5 +146,5 @@
     height: 100vh;
     background:
         var(--gdt),
-        url(assets/img/carro-carrossel.jpg) fixed center/cover
+        url(../assets/img/carro-carrossel.jpg) fixed center/cover
 }
