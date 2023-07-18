@@ -175,7 +175,7 @@ ul.navbar-nav {
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 
 }
 p.display-1{
