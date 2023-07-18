@@ -40,6 +40,7 @@ body {
         visibility: hidden;
         background-color: var(--po);
         backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
         padding-top: 70px;
         transition: transform .3s ease-in-out, visibility .3s ease-in-out;
     }
@@ -59,6 +60,8 @@ body {
 
 .blur {
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
 }
 
 ul.navbar-nav {
@@ -91,6 +94,8 @@ ul.navbar-nav {
     border-radius: 10px;
     background: var(--po);
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
 }
 
 .dropdown-item {
@@ -104,6 +109,8 @@ ul.navbar-nav {
     color: var(--bl);
     background: var(--po);
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
 }
 
 /* botao */
@@ -176,10 +183,16 @@ ul.navbar-nav {
     background-size: cover;
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
+    /* Script usado para substituir o background-attachment fixed
+    document.addEventListener("scroll", function(){
+    document.querySelector("main").style.backgroundPosition = '0 '+window.scrollY+'px';
+ });
+    */
 
 }
-p.display-1{
-font-weight: 500;
-font-style: italic;
-text-shadow: 1px 1px 7px var(--po);
+
+p.display-1 {
+    font-weight: 500;
+    font-style: italic;
+    text-shadow: 1px 1px 7px var(--po);
 }
