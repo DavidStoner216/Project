@@ -8,6 +8,6 @@
         document.getElementById('bar3').classList.toggle("change");
     })
 })()
-document.addEventListener("scroll", function(){
-    document.querySelector("main").style.backgroundPositionY = ''+window.scrollY+'px';
- });
+// document.addEventListener("scroll", function(){
+//     document.querySelector("main").style.backgroundPositionY = ''+window.scrollY+'px';
+//  });
