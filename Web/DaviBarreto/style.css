@@ -9,7 +9,7 @@
     --td: #15336D;
     --tl: #00F8E8;
     --gdt: linear-gradient(to top, #05001b9b, 2%, #00084da9 59.42857265472412%, 79.71428632736206%, #040d5aa5 100%);
-    --bdg: linear-gradient(to top, hsla(253, 100%, 50%, 0.731), 2%, hsla(209, 98%, 25%, 0.723) 59.42857265472412%, 79.71428632736206%, hsla(0, 0%, 0%, 0.789) 100%);
+    --bdg: linear-gradient(to top, hsla(253, 100%, 50%, 0.731), 2%, hsla(209, 98%, 25%, 0.723) 59.42857265472412%, 79.71428632736206%, hsla(240, 100%, 2%, 0.789) 100%);
     --po: rgba(0, 0, 0, 0.5);
 }
 
@@ -160,7 +160,7 @@ ul.navbar-nav {
     }
 }
 
-/* carrossel */
+/* main */
 #main {
     width: 100%;
     height: 100vh;
@@ -177,4 +177,9 @@ ul.navbar-nav {
     background-repeat: no-repeat;
     background-attachment: fixed;
 
+}
+p.display-1{
+font-weight: 500;
+font-style: italic;
+text-shadow: 1px 1px 7px var(--po);
 }
