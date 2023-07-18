@@ -30,6 +30,153 @@
 <body>
 
 
+  <header class="fixed-top">
+    <nav id="topo" class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+
+            <!-- imagem resposiva -->
+            <a class="navbar-brand ps-5 m-auto" href="index.html">
+                <img src="assets/svg/Ativo 7.svg" style="height: 50px" class="d-none d-lg-block">
+                <img src="assets/svg/Ativo 6.svg" style="height: 50px" alt="" class="d-lg-none">
+            </a>
+            <!-- botao animado -->
+            <button id="menu-bar" class="navbar-toggler" onclick="menuOnClick()" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </button>
+            <!-- Offcanvas / Navbar -->
+            <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title ms-2" id="offcanvasNavbarLabel">
+                        <img class="img-fluid" src="assets/svg/Ativo 7.svg" alt="" style="height: 70px;">
+                    </h5>
+                    <!-- botao animado -->
+                    <button id="menu-bar1" class="navbar-toggler" data-bs-dimiss="offcanvas" onclick="menuOnClick()"
+                        type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                        <div id="bar11" class="bar"></div>
+                        <div id="bar22" class="bar"></div>
+                        <div id="bar33" class="bar"></div>
+                    </button>
+                </div>
+                <div class="offcanvas-body ms-auto pe-4">
+                    <ul class="navbar-nav pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown dropdown-center">
+                            <a class="nav-link dropdown-toggle-split" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Seguradoras</a>
+                            <ul class="dropdown-menu dropdown-menu-dark ">
+                                <li><a class="dropdown-item" href="#">Porto Seguros</a></li>
+                                <li><a class="dropdown-item" href="#">Azul Seguros</a></li>
+                                <li><a class="dropdown-item" href="#">Mapfre Seguros</a></li>
+                                <li><a class="dropdown-item" href="#">Bradesco Seguros</a></li>
+                                <li><a class="dropdown-item" href="#">Allianz Seguros</a></li>
+                                <li><a class="dropdown-item" href="#">Suhai Seguros</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown dropdown-center">
+                            <a class="nav-link dropdown-toggle-split" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Produtos</a>
+                            <ul class="dropdown-menu dropdown-menu-dark ">
+                                <li><a class="dropdown-item" href="#">Automovel</a></li>
+                                <li><a class="dropdown-item" href="#">Motocicletas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="">Fazer cotação</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    </header>
+    <header class="fixed-top">
+      <nav id="topo" class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+              <button id="menu-bar" class="navbar-toggler position-absolute" onclick="menuOnClick()" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseWidth">
+                  <div id="bar1" class="bar"></div>
+                  <div id="bar2" class="bar"></div>
+                  <div id="bar3" class="bar"></div>
+              </button>
+              <!-- imagem resposiva -->
+              <a class="navbar-brand mx-auto" href="index.html">
+                  <img src="assets/svg/Ativo 7.svg" style="height: 50px" class="d-none d-lg-block">
+                  <img src="assets/svg/Ativo 6.svg" style="height: 50px" alt="" class="d-lg-none">
+              </a>
+              <div class="collapse navbar-collapse ">
+                  <ul class="navbar-nav ms-auto pe-4">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item dropdown dropdown-center">
+                          <a class="nav-link dropdown-toggle-split" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">Seguradoras</a>
+                          <ul class="dropdown-menu dropdown-menu-dark ">
+                              <li><a class="dropdown-item" href="#">Porto Seguros</a></li>
+                              <li><a class="dropdown-item" href="#">Azul Seguros</a></li>
+                              <li><a class="dropdown-item" href="#">Mapfre Seguros</a></li>
+                              <li><a class="dropdown-item" href="#">Bradesco Seguros</a></li>
+                              <li><a class="dropdown-item" href="#">Allianz Seguros</a></li>
+                              <li><a class="dropdown-item" href="#">Suhai Seguros</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item dropdown dropdown-center">
+                          <a class="nav-link dropdown-toggle-split" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">Produtos</a>
+                          <ul class="dropdown-menu dropdown-menu-dark ">
+                              <li><a class="dropdown-item" href="#">Automovel</a></li>
+                              <li><a class="dropdown-item" href="#">Motocicletas</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="">Fazer cotação</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+      <div id="lateral" class="d-lg-none d-block">
+          <div class="collapse collapse-horizontal" tabindex="-1" id="collapseWidth">
+              <div class="card card-body">
+                  <ul class="navbar-nav ms-auto pe-4">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item dropdown dropdown-center">
+                          <a class="nav-link dropdown-toggle-split" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">Seguradoras</a>
+                          <ul class="dropdown-menu dropdown-menu-dark ">
+                              <li><a class="dropdown-item" href="#">Porto Seguros</a></li>
+                              <li><a class="dropdown-item" href="#">Azul Seguros</a></li>
+                              <li><a class="dropdown-item" href="#">Mapfre Seguros</a></li>
+                              <li><a class="dropdown-item" href="#">Bradesco Seguros</a></li>
+                              <li><a class="dropdown-item" href="#">Allianz Seguros</a></li>
+                              <li><a class="dropdown-item" href="#">Suhai Seguros</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item dropdown dropdown-center">
+                          <a class="nav-link dropdown-toggle-split" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">Produtos</a>
+                          <ul class="dropdown-menu dropdown-menu-dark ">
+                              <li><a class="dropdown-item" href="#">Automovel</a></li>
+                              <li><a class="dropdown-item" href="#">Motocicletas</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="">Fazer cotação</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </header>
+
   <!-- JavaScript (Opcional) -->
   <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

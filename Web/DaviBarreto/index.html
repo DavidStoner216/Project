@@ -2,25 +2,19 @@
 <html lang="pt-br">
 
 <head>
-    <!-- Meta tags Obrigatórias -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-    <!-- HTML5Shiv -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <![endif]-->
-
     <!-- Estilo customizado -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
@@ -30,84 +24,75 @@
     <link rel="manifest" href="assets/favicon/site.webmanifest">
 
     <title>Davi Barreto</title>
+    <meta name="theme-color" content="#7952b3">
+
 </head>
 
-<body>
-
-    <header class="fixed-top">
-        <nav id="topo" class="navbar navbar-expand-lg">
+<body class="bg-dark text-light">
+    <header id="topo" class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <div class="container-fluid">
-
-                <!-- imagem resposiva -->
-                <a class="navbar-brand ps-5 m-auto" href="index.html">
-                    <img src="assets/svg/Ativo 7.svg" style="height: 50px" class="d-none d-lg-block">
-                    <img src="assets/svg/Ativo 6.svg" style="height: 50px" alt="" class="d-lg-none">
+                <a class="navbar-brand pl-sm-5 pl-lg-0 mx-auto" href="index.html">
+                    <img src="assets/svg/Ativo 7.svg" style="height: 60px" class="d-none d-lg-block">
+                    <img src="assets/svg/Ativo 6.svg" style="height: 60px" alt="" class="d-lg-none">
                 </a>
-                <!-- botao animado -->
-                <button id="menu-bar" class="navbar-toggler" onclick="menuOnClick()" type="button"
-                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                <button id="menu-bar" class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
                     <div id="bar1" class="bar"></div>
                     <div id="bar2" class="bar"></div>
                     <div id="bar3" class="bar"></div>
                 </button>
-                <!-- Offcanvas / Navbar -->
-                <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title ms-2" id="offcanvasNavbarLabel">
-                            <img class="img-fluid" src="assets/svg/Ativo 7.svg" alt="" style="height: 70px;">
-                        </h5>
-                        <!-- botao animado -->
-                        <button id="menu-bar1" class="navbar-toggler" data-bs-dimiss="offcanvas" onclick="menuOnClick()"
-                            type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
-                            <div id="bar11" class="bar"></div>
-                            <div id="bar22" class="bar"></div>
-                            <div id="bar33" class="bar"></div>
-                        </button>
-                    </div>
-                    <div class="offcanvas-body ms-auto pe-4">
-                        <ul class="navbar-nav pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item dropdown dropdown-center">
-                                <a class="nav-link dropdown-toggle-split" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">Seguradoras</a>
-                                <ul class="dropdown-menu dropdown-menu-dark ">
-                                    <li><a class="dropdown-item" href="#">Porto Seguros</a></li>
-                                    <li><a class="dropdown-item" href="#">Azul Seguros</a></li>
-                                    <li><a class="dropdown-item" href="#">Mapfre Seguros</a></li>
-                                    <li><a class="dropdown-item" href="#">Bradesco Seguros</a></li>
-                                    <li><a class="dropdown-item" href="#">Allianz Seguros</a></li>
-                                    <li><a class="dropdown-item" href="#">Suhai Seguros</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown dropdown-center">
-                                <a class="nav-link dropdown-toggle-split" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">Produtos</a>
-                                <ul class="dropdown-menu dropdown-menu-dark ">
-                                    <li><a class="dropdown-item" href="#">Automovel</a></li>
-                                    <li><a class="dropdown-item" href="#">Motocicletas</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="">Fazer cotação</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="navbar-collapse offcanvas-collapse" id="navbar">
+                    <ul class="navbar-nav ml-auto mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown dropdown-center">
+                            <a class="nav-link dropdown-toggle-split" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Seguradoras</a>
+                            <ul class="dropdown-menu dropdown-menu-dark ">
+                                <li><a class="dropdown-item" href="#">Porto Seguros</a></li>
+                                <li><a class="dropdown-item" href="#">Azul Seguros</a></li>
+                                <li><a class="dropdown-item" href="#">Mapfre Seguros</a></li>
+                                <li><a class="dropdown-item" href="#">Bradesco Seguros</a></li>
+                                <li><a class="dropdown-item" href="#">Allianz Seguros</a></li>
+                                <li><a class="dropdown-item" href="#">Suhai Seguros</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown dropdown-center">
+                            <a class="nav-link dropdown-toggle-split" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Produtos</a>
+                            <ul class="dropdown-menu dropdown-menu-dark ">
+                                <li><a class="dropdown-item" href="#">Automovel</a></li>
+                                <li><a class="dropdown-item" href="#">Motocicletas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="">Fazer cotação</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <section id="home">
-        a
-    </section>
+    <main id="main" class="d-flex">
+        <div class="container align-self-center">
+            <div class="row">
+                <p class="display-3">O seguro ideal para você, comparado em várias seguradoras.</p>
+            </div>
+        </div>
+    </main>
+
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <!-- JavaScript (Opcional) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-    <script src="Js/JavaScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
