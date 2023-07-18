@@ -181,7 +181,9 @@ ul.navbar-nav {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    -webkit-background-size: cover;
     background-repeat: no-repeat;
+    -webkit-background-repeat: no-repeat;
     /* background-attachment: fixed; */
     /* Script usado para substituir o background-attachment fixed
     document.addEventListener("scroll", function(){
