@@ -9,5 +9,5 @@
     })
 })()
 document.addEventListener("scroll", function(){
-    document.querySelector("main").style.backgroundPositionY = '0'+window.scrollY+'px';
+    document.querySelector("main").style.backgroundPositionY = ''+window.scrollY+'px';
  });
