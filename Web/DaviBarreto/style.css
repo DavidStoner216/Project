@@ -18,6 +18,11 @@
     .offcanvas-collapse {
         padding: 6rem 1.05rem 0 0rem;
     }
+    .row.g-0 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* ou 'contain' dependendo do efeito desejado */
+    }
 }
 
 /* Dispositivos small (telefones em modo paisagem, com 576px ou mais) */
