@@ -18,10 +18,15 @@
     .offcanvas-collapse {
         padding: 6rem 1.05rem 0 0rem;
     }
+
     .row.g-0 img {
         width: 100%;
         height: 100%;
-        object-fit: cover; /* ou 'contain' dependendo do efeito desejado */
+        object-fit: cover;
+        /* ou 'contain' dependendo do efeito desejado */
+        -moz-object-fit: cover;
+        -webkit-object-fit: cover;
+        -o-object-fit: cover;
     }
 }
 
@@ -34,10 +39,15 @@
     .offcanvas-collapse {
         padding: 6rem 1.05rem 0 0rem;
     }
+
     .row.g-0 img {
         width: 100%;
         height: 100%;
-        object-fit: cover; /* ou 'contain' dependendo do efeito desejado */
+        object-fit: cover;
+        /* ou 'contain' dependendo do efeito desejado */
+        -moz-object-fit: cover;
+        -webkit-object-fit: cover;
+        -o-object-fit: cover;
     }
 }
 
@@ -58,7 +68,11 @@
     .row.g-0 img {
         width: 100%;
         height: 100%;
-        object-fit: cover; /* ou 'contain' dependendo do efeito desejado */
+        object-fit: cover;
+        /* ou 'contain' dependendo do efeito desejado */
+        -moz-object-fit: cover;
+        -webkit-object-fit: cover;
+        -o-object-fit: cover;
     }
 }
 
@@ -75,10 +89,15 @@
     .card-body {
         height: 550px;
     }
+
     .row.g-0 img {
         width: 100%;
         height: 100%;
-        object-fit: cover; /* ou 'contain' dependendo do efeito desejado */
+        object-fit: cover;
+        /* ou 'contain' dependendo do efeito desejado */
+        -moz-object-fit: cover;
+        -webkit-object-fit: cover;
+        -o-object-fit: cover;
     }
 }
 
@@ -250,7 +269,7 @@ ul.navbar-nav {
     height: 100vh;
     background:
         var(--bdg),
-        url(assets/img/carro-carrossel.jpg);
+        url(assets/img/imgslogan.jpg);
     -webkit-background-position: center;
     background-position: center;
     -webkit-background-size: cover;
@@ -268,8 +287,8 @@ ul.navbar-nav {
     */
 }
 
-#main {
-    margin: -80px
+.cards {
+    margin-top: -80px
 }
 
 h1.display-1 {
@@ -299,19 +318,22 @@ p.card-text {
     font-size: 1.2em;
 }
 
-.card.round{
+.card.round {
     margin-top: -20px;
 }
 
-.row.d-none .col-lg-4.mb-5{
+.row.d-none .col-lg-4.mb-5 {
     transition: 0.5s;
 }
+
 .row.d-none .col-lg-4.mb-5:hover {
-scale: 105%;
+    scale: 105%;
 }
-.row.d-lg-none .col-lg-4.mb-5{
+
+.row.d-lg-none .col-lg-4.mb-5 {
     transition: 0.5s;
 }
+
 .row.d-lg-none .col-lg-4.mb-5:hover {
-scale: 108%;
+    scale: 108%;
 }
