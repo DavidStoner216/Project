@@ -8,20 +8,95 @@
     --w: #ffffff;
     --td: #15336D;
     --tl: #00F8E8;
-    --gdt: linear-gradient(to top, #05001b9b, 2%, #00084da9 59.42857265472412%, 79.71428632736206%, #040d5aa5 100%);
-    --bdg: linear-gradient(to top, hsl(253, 100%, 50%), 2%, hsla(209, 98%, 25%, 0.723) 59.42857265472412%, 79.71428632736206%, hsla(240, 100%, 2%, 0.789) 100%);
+    --gdt: linear-gradient(to top, #000000, 2%, #000000 20%, 30%, #00000000 100%);
+    --bdg: linear-gradient(to top, hsla(253, 100%, 50%, 0.674), 2%, hsla(209, 98%, 25%, 0.493) 59.42857265472412%, 79.71428632736206%, hsla(240, 100%, 2%, 0.394) 100%);
     --po: rgba(0, 0, 0, 0.5);
 }
 
-@media (min-width: 768px) {
+/* Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
+@media (max-width: 575.98px) {
+    .offcanvas-collapse {
+        padding: 6rem 1.05rem 0 0rem;
+    }
+}
+
+/* Dispositivos small (telefones em modo paisagem, com 576px ou mais) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .offcanvas-collapse {
+        padding: 6rem 1.05rem 0 0rem;
+    }
+    .row.g-0 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* ou 'contain' dependendo do efeito desejado */
+    }
+}
+
+/* Dispositivos médios (tablets com 768px ou mais) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    .offcanvas-collapse {
+        padding: 6rem 1.05rem 0 0rem;
+    }
+
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
     }
+
+    .row.g-0 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* ou 'contain' dependendo do efeito desejado */
+    }
 }
+
+/* Dispositivos large (desktops com 992px ou mais) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    .offcanvas-collapse {
+        padding: 0rem 0rem 0 0rem;
+    }
+
+    .card-body {
+        height: 550px;
+    }
+    .row.g-0 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* ou 'contain' dependendo do efeito desejado */
+    }
+}
+
+/* Dispositivos extra large (desktops grandes com 1200px ou mais) */
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 5em;
+    }
+
+    .offcanvas-collapse {
+        padding: 0rem 0 0 0rem;
+    }
+
+    .card-body {
+        height: 450px;
+    }
+}
+
 
 /* Prevent scroll on narrow devices */
 html,
 body {
+    background-color: var(--d);
     overflow-x: hidden;
 }
 
@@ -34,14 +109,11 @@ body {
         left: 100%;
         width: 50%;
         text-align: end;
-        padding-right: 1rem;
-        padding-left: 1rem;
         overflow-y: auto;
         visibility: hidden;
         background-color: var(--po);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
-        padding-top: 70px;
         transition: transform .3s ease-in-out, visibility .3s ease-in-out;
     }
 
@@ -168,7 +240,7 @@ ul.navbar-nav {
 }
 
 /* main */
-#main {
+#slogan {
     width: 100%;
     height: 100vh;
     background:
@@ -182,18 +254,59 @@ ul.navbar-nav {
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-background-repeat: no-repeat;
-    background-attachment: fixed; 
+    background-attachment: fixed;
     -webkit-background-attachment: fixed;
     /* Script usado para substituir o background-attachment fixed
     document.addEventListener("scroll", function(){
     document.querySelector("main").style.backgroundPosition = '0 '+window.scrollY+'px';
  });
     */
-
 }
 
-p.display-1 {
-    font-weight: 500;
+#main {
+    margin: -80px
+}
+
+h1.display-1 {
+    font-weight: 400;
     font-style: italic;
     text-shadow: 1px 1px 7px var(--po);
+}
+
+.m- {
+    margin: -50px;
+}
+
+.round {
+    border-radius: 13px;
+}
+
+.roundl {
+    border-radius: 13px 0px 0px 13px;
+}
+
+.roundr {
+    border-radius: 0px 13px 13px 0px;
+}
+
+/* card */
+p.card-text {
+    font-size: 1.2em;
+}
+
+.card.round{
+    margin-top: -20px;
+}
+
+.row.d-none .col-lg-4.mb-5{
+    transition: 0.5s;
+}
+.row.d-none .col-lg-4.mb-5:hover {
+scale: 105%;
+}
+.row.d-lg-none .col-lg-4.mb-5{
+    transition: 0.5s;
+}
+.row.d-lg-none .col-lg-4.mb-5:hover {
+scale: 108%;
 }
