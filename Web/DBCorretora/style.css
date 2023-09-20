@@ -13,6 +13,19 @@
     --po: rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 575.98px) {}
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) {}
+
+
+
+
 /* Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
 @media (max-width: 575.98px) {
     .offcanvas-collapse {
@@ -28,6 +41,7 @@
         -webkit-object-fit: cover;
         -o-object-fit: cover;
     }
+
     #slogan {
         width: 100%;
         height: 100vh;
@@ -73,30 +87,7 @@
         -webkit-object-fit: cover;
         -o-object-fit: cover;
     }
-    #slogan {
-        width: 100%;
-        height: 100vh;
-        background:
-            var(--bdg),
-            url(assets/img/imgslogansmall.jpg);
-        -webkit-background-position: center;
-        background-position: center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        background-repeat: no-repeat;
-        -webkit-background-repeat: no-repeat;
-        background-attachment: fixed;
-        -webkit-background-attachment: fixed;
-        -moz-background-attachment: fixed;
-        -o-background-attachment: fixed;
-        /* Script usado para substituir o background-attachment fixed
-        document.addEventListener("scroll", function(){
-        document.querySelector("main").style.backgroundPosition = '0 '+window.scrollY+'px';
-     });
-        */
-    }
+
 }
 
 /* Dispositivos médios (tablets com 768px ou mais) */
@@ -122,30 +113,7 @@
         -webkit-object-fit: cover;
         -o-object-fit: cover;
     }
-    #slogan {
-        width: 100%;
-        height: 100vh;
-        background:
-            var(--bdg),
-            url(assets/img/imgslogan.jpg);
-        -webkit-background-position: center;
-        background-position: center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        background-repeat: no-repeat;
-        -webkit-background-repeat: no-repeat;
-        background-attachment: fixed;
-        -webkit-background-attachment: fixed;
-        -moz-background-attachment: fixed;
-        -o-background-attachment: fixed;
-        /* Script usado para substituir o background-attachment fixed
-        document.addEventListener("scroll", function(){
-        document.querySelector("main").style.backgroundPosition = '0 '+window.scrollY+'px';
-     });
-        */
-    }
+
 }
 
 /* Dispositivos large (desktops com 992px ou mais) */
@@ -171,30 +139,6 @@
         -webkit-object-fit: cover;
         -o-object-fit: cover;
     }
-    #slogan {
-        width: 100%;
-        height: 100vh;
-        background:
-            var(--bdg),
-            url(assets/img/imgslogan.jpg);
-        -webkit-background-position: center;
-        background-position: center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        background-repeat: no-repeat;
-        -webkit-background-repeat: no-repeat;
-        background-attachment: fixed;
-        -webkit-background-attachment: fixed;
-        -moz-background-attachment: fixed;
-        -o-background-attachment: fixed;
-        /* Script usado para substituir o background-attachment fixed
-        document.addEventListener("scroll", function(){
-        document.querySelector("main").style.backgroundPosition = '0 '+window.scrollY+'px';
-     });
-        */
-    }
 }
 
 /* Dispositivos extra large (desktops grandes com 1200px ou mais) */
@@ -209,30 +153,6 @@
 
     .card-body {
         height: 450px;
-    }
-    #slogan {
-        width: 100%;
-        height: 100vh;
-        background:
-            var(--bdg),
-            url(assets/img/imgslogan.jpg);
-        -webkit-background-position: center;
-        background-position: center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        background-repeat: no-repeat;
-        -webkit-background-repeat: no-repeat;
-        background-attachment: fixed;
-        -webkit-background-attachment: fixed;
-        -moz-background-attachment: fixed;
-        -o-background-attachment: fixed;
-        /* Script usado para substituir o background-attachment fixed
-        document.addEventListener("scroll", function(){
-        document.querySelector("main").style.backgroundPosition = '0 '+window.scrollY+'px';
-     });
-        */
     }
 }
 
@@ -385,6 +305,40 @@ ul.navbar-nav {
 
 /* main */
 
+@media (max-width: 575.98px) {
+    #slogan {
+        width: 100%;
+        height: 100%;
+        background:
+            var(--bdg),
+            url(assets/img/imgslogansmall.jpg);
+        -webkit-background-position: center;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-background-repeat: no-repeat;
+        background-attachment: fixed;
+        -webkit-background-attachment: fixed;
+        -moz-background-attachment: fixed;
+        -o-background-attachment: fixed;
+        /* Script usado para substituir o background-attachment fixed
+        document.addEventListener("scroll", function(){
+        document.querySelector("main").style.backgroundPosition = '0 '+window.scrollY+'px';
+     });
+        */
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) {}
 
 .cards {
     margin-top: -80px
