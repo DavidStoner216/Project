@@ -9,290 +9,35 @@
     --td: #15336D;
     --tl: #00F8E8;
     --gdt: linear-gradient(to top, #000000, 2%, #000000 20%, 30%, #00000000 100%);
-    --bdg: linear-gradient(to top, hsla(253, 100%, 50%, 0.674), 2%, hsla(209, 98%, 25%, 0.493) 59.42857265472412%, 79.71428632736206%, hsla(240, 100%, 2%, 0.394) 100%);
+    --bdg: linear-gradient(to top, hsl(0, 0%, 0%), 20%, hsla(209, 98%, 25%, 0.493) 59.42857265472412%, 79.71428632736206%, hsla(240, 100%, 2%, 0.394) 100%);
     --po: rgba(0, 0, 0, 0.5);
 }
 
-/* Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
-@media (max-width: 575.98px) {
-    .offcanvas-collapse {
-        padding: 6rem 1.05rem 0 0rem;
-    }
+@media (max-width: 575.98px) {}
 
-    .row.g-0 img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        /* ou 'contain' dependendo do efeito desejado */
-        -moz-object-fit: cover;
-        -webkit-object-fit: cover;
-        -o-object-fit: cover;
-    }
-    #slogan {
-        width: 100%;
-        height: 100vh;
-        background:
-            var(--bdg),
-            url(assets/img/imgslogansmall.jpg);
-        -webkit-background-position: center;
-        background-position: center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        background-repeat: no-repeat;
-        -webkit-background-repeat: no-repeat;
-        background-attachment: fixed;
-        -webkit-background-attachment: fixed;
-        -moz-background-attachment: fixed;
-        -o-background-attachment: fixed;
-        /* Script usado para substituir o background-attachment fixed
-        document.addEventListener("scroll", function(){
-        document.querySelector("main").style.backgroundPosition = '0 '+window.scrollY+'px';
-     });
-        */
-    }
-}
+@media (min-width: 576px) and (max-width: 767.98px) {}
 
-/* Dispositivos small (telefones em modo paisagem, com 576px ou mais) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-    h1 {
-        font-size: 2em;
-    }
+@media (min-width: 768px) and (max-width: 991.98px) {}
 
-    .offcanvas-collapse {
-        padding: 6rem 1.05rem 0 0rem;
-    }
+@media (min-width: 992px) and (max-width: 1199.98px) {}
 
-    .row.g-0 img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        /* ou 'contain' dependendo do efeito desejado */
-        -moz-object-fit: cover;
-        -webkit-object-fit: cover;
-        -o-object-fit: cover;
-    }
-    #slogan {
-        width: 100%;
-        height: 100vh;
-        background:
-            var(--bdg),
-            url(assets/img/imgslogansmall.jpg);
-        -webkit-background-position: center;
-        background-position: center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        background-repeat: no-repeat;
-        -webkit-background-repeat: no-repeat;
-        background-attachment: fixed;
-        -webkit-background-attachment: fixed;
-        -moz-background-attachment: fixed;
-        -o-background-attachment: fixed;
-        /* Script usado para substituir o background-attachment fixed
-        document.addEventListener("scroll", function(){
-        document.querySelector("main").style.backgroundPosition = '0 '+window.scrollY+'px';
-     });
-        */
-    }
-}
+@media (min-width: 1200px) {}
 
-/* Dispositivos médios (tablets com 768px ou mais) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-    h1 {
-        font-size: 3em;
-    }
-
-    .offcanvas-collapse {
-        padding: 6rem 1.05rem 0 0rem;
-    }
-
-    .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-    }
-
-    .row.g-0 img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        /* ou 'contain' dependendo do efeito desejado */
-        -moz-object-fit: cover;
-        -webkit-object-fit: cover;
-        -o-object-fit: cover;
-    }
-    #slogan {
-        width: 100%;
-        height: 100vh;
-        background:
-            var(--bdg),
-            url(assets/img/imgslogan.jpg);
-        -webkit-background-position: center;
-        background-position: center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        background-repeat: no-repeat;
-        -webkit-background-repeat: no-repeat;
-        background-attachment: fixed;
-        -webkit-background-attachment: fixed;
-        -moz-background-attachment: fixed;
-        -o-background-attachment: fixed;
-        /* Script usado para substituir o background-attachment fixed
-        document.addEventListener("scroll", function(){
-        document.querySelector("main").style.backgroundPosition = '0 '+window.scrollY+'px';
-     });
-        */
-    }
-}
-
-/* Dispositivos large (desktops com 992px ou mais) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    h1 {
-        font-size: 4em;
-    }
-
-    .offcanvas-collapse {
-        padding: 0rem 0rem 0 0rem;
-    }
-
-    .card-body {
-        height: 550px;
-    }
-
-    .row.g-0 img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        /* ou 'contain' dependendo do efeito desejado */
-        -moz-object-fit: cover;
-        -webkit-object-fit: cover;
-        -o-object-fit: cover;
-    }
-    #slogan {
-        width: 100%;
-        height: 100vh;
-        background:
-            var(--bdg),
-            url(assets/img/imgslogan.jpg);
-        -webkit-background-position: center;
-        background-position: center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        background-repeat: no-repeat;
-        -webkit-background-repeat: no-repeat;
-        background-attachment: fixed;
-        -webkit-background-attachment: fixed;
-        -moz-background-attachment: fixed;
-        -o-background-attachment: fixed;
-        /* Script usado para substituir o background-attachment fixed
-        document.addEventListener("scroll", function(){
-        document.querySelector("main").style.backgroundPosition = '0 '+window.scrollY+'px';
-     });
-        */
-    }
-}
-
-/* Dispositivos extra large (desktops grandes com 1200px ou mais) */
-@media (min-width: 1200px) {
-    h1 {
-        font-size: 5em;
-    }
-
-    .offcanvas-collapse {
-        padding: 0rem 0 0 0rem;
-    }
-
-    .card-body {
-        height: 450px;
-    }
-    #slogan {
-        width: 100%;
-        height: 100vh;
-        background:
-            var(--bdg),
-            url(assets/img/imgslogan.jpg);
-        -webkit-background-position: center;
-        background-position: center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        background-repeat: no-repeat;
-        -webkit-background-repeat: no-repeat;
-        background-attachment: fixed;
-        -webkit-background-attachment: fixed;
-        -moz-background-attachment: fixed;
-        -o-background-attachment: fixed;
-        /* Script usado para substituir o background-attachment fixed
-        document.addEventListener("scroll", function(){
-        document.querySelector("main").style.backgroundPosition = '0 '+window.scrollY+'px';
-     });
-        */
-    }
-}
-
-
-/* Prevent scroll on narrow devices */
 html,
 body {
     background-color: var(--d);
     overflow-x: hidden;
 }
 
-@media (max-width: 991.98px) {
-    .offcanvas-collapse {
-        position: fixed;
-        top: 0px;
-        /* Height of navbar */
-        bottom: 0;
-        left: 100%;
-        width: 50%;
-        text-align: end;
-        overflow-y: auto;
-        visibility: hidden;
-        background-color: var(--po);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        transition: transform .3s ease-in-out, visibility .3s ease-in-out;
-    }
-
-    .offcanvas-collapse.open {
-        visibility: visible;
-        transform: translateX(-100%);
-    }
-
-}
-
+/* TOPO */
 #topo {
     background: var(--po);
     color: var(--w);
-
 }
 
-.blur {
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-
-}
-
+/* OFFCANVAS / navbar  */
 ul.navbar-nav {
     margin-left: auto;
-}
-
-.navbar-toggler {
-    padding: 0px 4px;
-    border: none;
-}
-
-.navbar-toggler:focus {
-    text-decoration: none;
-    outline: 0;
-    box-shadow: none;
 }
 
 .navbar-nav .nav-link.active,
@@ -329,87 +74,245 @@ ul.navbar-nav {
 
 }
 
-/* botao */
-* {
-    #menu-bar {
-        z-index: 999;
-        width: 45px;
-        height: 45px;
-        float: inline-end;
+
+@media (max-width: 575.98px) {
+    .offcanvas-collapse {
+        padding: 6rem 1.05rem 0 0rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .offcanvas-collapse {
+        padding: 6rem 1.05rem 0 0rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .offcanvas-collapse {
+        padding: 6rem 1.05rem 0 0rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .offcanvas-collapse {
+        position: fixed;
+        top: 0px;
+        /* Height of navbar */
+        bottom: 0;
+        left: 100%;
+        width: 50%;
+        text-align: end;
+        overflow-y: auto;
+        visibility: hidden;
+        background-color: var(--po);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        transition: transform .3s ease-in-out, visibility .3s ease-in-out;
     }
 
-    .change #menu-bar,
-    .change #menu-bar1 {
-        z-index: 999;
-        position: relative;
+    .offcanvas-collapse.open {
+        visibility: visible;
+        transform: translateX(-100%);
     }
 
-    .bar {
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .offcanvas-collapse {
+        padding: 0rem 0rem 0 0rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .offcanvas-collapse {
+        padding: 0rem 0 0 0rem;
+    }
+}
+
+/* BOTÃO / navbar */
+#menu-bar {
+    z-index: 999;
+    width: 45px;
+    height: 45px;
+    float: inline-end;
+}
+
+.change #menu-bar,
+.change #menu-bar1 {
+    z-index: 999;
+    position: relative;
+}
+
+.bar {
+    width: 100%;
+    display: block;
+    height: 4px;
+    background-color: var(--bl);
+    border-radius: 5px;
+}
+
+#bar1 {
+    transform: translateY(-7px);
+    transition: 1.5s ease-in-out;
+
+}
+
+#bar2 {
+    transition: 1.5s ease-in-out;
+    margin-left: auto;
+}
+
+#bar3 {
+    transform: translateY(7px);
+    transition: 1.5s ease-in-out;
+
+}
+
+.change#bar1 {
+    transform: translateY(3px) rotateZ(-45deg);
+}
+
+.change#bar2 {
+    opacity: 0;
+    width: 0px;
+}
+
+.change#bar3 {
+    transform: translateY(-3px) rotateZ(45deg);
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+/* SLOGAN BACKGROUND*/
+@media (max-width: 575.98px) {
+    #slogan {
+        background:
+            var(--bdg),
+            url(assets/img/imgslogan.jpg);
         width: 100%;
-        display: block;
-        height: 4px;
-        background-color: var(--bl);
-        border-radius: 5px;
-    }
+        height: 100vh;
+        -webkit-background-position: center;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-background-repeat: no-repeat;
+        background-attachment: scroll;
+        -webkit-background-attachment: scroll;
+        -moz-background-attachment: scroll;
+        -o-background-attachment: scroll;
 
-    #bar1 {
-        transform: translateY(-7px);
-        transition: 1.5s ease-in-out;
-
-    }
-
-    #bar2 {
-        transition: 1.5s ease-in-out;
-        margin-left: auto;
-    }
-
-    #bar3 {
-        transform: translateY(7px);
-        transition: 1.5s ease-in-out;
-
-    }
-
-    .change#bar1 {
-        transform: translateY(3px) rotateZ(-45deg);
-    }
-
-    .change#bar2 {
-        opacity: 0;
-        width: 0px;
-    }
-
-    .change#bar3 {
-        transform: translateY(-3px) rotateZ(45deg);
     }
 }
 
-/* main */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #slogan {
+        background:
+            var(--bdg),
+            url(assets/img/imgslogan.jpg);
+        width: 100%;
+        height: 100vh;
+        -webkit-background-position: center;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-background-repeat: no-repeat;
+        background-attachment: scroll;
+        -webkit-background-attachment: scroll;
+        -moz-background-attachment: scroll;
+        -o-background-attachment: scroll;
 
-
-.cards {
-    margin-top: -80px
+    }
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #slogan {
+        background:
+            var(--bdg),
+            url(assets/img/imgslogan.jpg);
+        width: 100%;
+        height: 100vh;
+        -webkit-background-position: center;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-background-repeat: no-repeat;
+        background-attachment: fixed;
+        -webkit-background-attachment: fixed;
+        -moz-background-attachment: fixed;
+        -o-background-attachment: fixed;
+
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #slogan {
+        background:
+            var(--bdg),
+            url(assets/img/imgslogan.jpg);
+        width: 100%;
+        height: 100vh;
+        -webkit-background-position: center;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-background-repeat: no-repeat;
+        background-attachment: fixed;
+        -webkit-background-attachment: fixed;
+        -moz-background-attachment: fixed;
+        -o-background-attachment: fixed;
+
+    }
+}
+
+@media (min-width: 1200px) {
+    #slogan {
+        background:
+            var(--bdg),
+            url(assets/img/imgslogan.jpg);
+        width: 100%;
+        height: 100vh;
+        -webkit-background-position: center;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-background-repeat: no-repeat;
+        background-attachment: fixed;
+        -webkit-background-attachment: fixed;
+        -moz-background-attachment: fixed;
+        -o-background-attachment: fixed;
+
+    }
+}
+
+/* TEXT / slogan */
 h1.display-1 {
     font-weight: 400;
     font-style: italic;
     text-shadow: 1px 1px 7px var(--po);
 }
 
-.m- {
-    margin: -50px;
-}
-
-.round {
-    border-radius: 13px;
-}
-
-.roundl {
-    border-radius: 13px 0px 0px 13px;
-}
-
-.roundr {
-    border-radius: 0px 13px 13px 0px;
+/* CARDS */
+.cards {
+    margin-top: -80px
 }
 
 /* card */
@@ -435,4 +338,82 @@ p.card-text {
 
 .row.d-lg-none .col-lg-4.mb-5:hover {
     scale: 108%;
+}
+
+@media (max-width: 575.98px) {
+    .row.g-0 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        -moz-object-fit: cover;
+        -webkit-object-fit: cover;
+        -o-object-fit: cover;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .row.g-0 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        -moz-object-fit: cover;
+        -webkit-object-fit: cover;
+        -o-object-fit: cover;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .row.g-0 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        -moz-object-fit: cover;
+        -webkit-object-fit: cover;
+        -o-object-fit: cover;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .card-body {
+        height: 385px;
+    }
+    .row.g-0 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        -moz-object-fit: cover;
+        -webkit-object-fit: cover;
+        -o-object-fit: cover;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-body {
+        height: 430px;
+    }
+    .row.g-0 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        -moz-object-fit: cover;
+        -webkit-object-fit: cover;
+        -o-object-fit: cover;
+    }
+}
+/* CLASSES SIMPLES */
+
+.m- {
+    margin: -50px;
+}
+
+.round {
+    border-radius: 13px;
+}
+
+.roundl {
+    border-radius: 13px 0px 0px 13px;
+}
+
+.roundr {
+    border-radius: 0px 13px 13px 0px;
 }

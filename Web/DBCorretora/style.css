@@ -9,7 +9,7 @@
     --td: #15336D;
     --tl: #00F8E8;
     --gdt: linear-gradient(to top, #000000, 2%, #000000 20%, 30%, #00000000 100%);
-    --bdg: linear-gradient(to top, hsla(253, 100%, 50%, 0.674), 2%, hsla(209, 98%, 25%, 0.493) 59.42857265472412%, 79.71428632736206%, hsla(240, 100%, 2%, 0.394) 100%);
+    --bdg: linear-gradient(to top, hsl(0, 0%, 0%), 20%, hsla(209, 98%, 25%, 0.493) 59.42857265472412%, 79.71428632736206%, hsla(240, 100%, 2%, 0.394) 100%);
     --po: rgba(0, 0, 0, 0.5);
 }
 
@@ -22,11 +22,13 @@
 @media (min-width: 992px) and (max-width: 1199.98px) {}
 
 @media (min-width: 1200px) {}
+
 html,
 body {
     background-color: var(--d);
     overflow-x: hidden;
 }
+
 /* TOPO */
 #topo {
     background: var(--po);
@@ -37,6 +39,7 @@ body {
 ul.navbar-nav {
     margin-left: auto;
 }
+
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link,
 .navbar-nav .nav-link.show {
@@ -89,6 +92,7 @@ ul.navbar-nav {
         padding: 6rem 1.05rem 0 0rem;
     }
 }
+
 @media (max-width: 991.98px) {
     .offcanvas-collapse {
         position: fixed;
@@ -176,19 +180,21 @@ ul.navbar-nav {
 .change#bar3 {
     transform: translateY(-3px) rotateZ(45deg);
 }
+
 .navbar-toggler:focus {
     text-decoration: none;
     outline: 0;
     box-shadow: none;
 }
 
+/* SLOGAN BACKGROUND*/
 @media (max-width: 575.98px) {
-    .slogan {
-        width: 100%;
-        height: 100vh;
+    #slogan {
         background:
             var(--bdg),
-            url(assets/img/imgslogansmall.jpg);
+            url(assets/img/imgslogan.jpg);
+        width: 100%;
+        height: 100vh;
         -webkit-background-position: center;
         background-position: center;
         -webkit-background-size: cover;
@@ -198,19 +204,20 @@ ul.navbar-nav {
         background-repeat: no-repeat;
         -webkit-background-repeat: no-repeat;
         background-attachment: scroll;
-        -webkit-background-attachment: fixed;
-        -moz-background-attachment: fixed;
-        -o-background-attachment: fixed;
+        -webkit-background-attachment: scroll;
+        -moz-background-attachment: scroll;
+        -o-background-attachment: scroll;
+
     }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .slogan {
-        width: 100%;
-        height: 100vh;
+    #slogan {
         background:
             var(--bdg),
-            url(assets/img/imgslogansmall.jpg);
+            url(assets/img/imgslogan.jpg);
+        width: 100%;
+        height: 100vh;
         -webkit-background-position: center;
         background-position: center;
         -webkit-background-size: cover;
@@ -220,19 +227,20 @@ ul.navbar-nav {
         background-repeat: no-repeat;
         -webkit-background-repeat: no-repeat;
         background-attachment: scroll;
-        -webkit-background-attachment: fixed;
-        -moz-background-attachment: fixed;
-        -o-background-attachment: fixed;
+        -webkit-background-attachment: scroll;
+        -moz-background-attachment: scroll;
+        -o-background-attachment: scroll;
+
     }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .slogan {
-        width: 100%;
-        height: 100vh;
+    #slogan {
         background:
             var(--bdg),
             url(assets/img/imgslogan.jpg);
+        width: 100%;
+        height: 100vh;
         -webkit-background-position: center;
         background-position: center;
         -webkit-background-size: cover;
@@ -245,16 +253,17 @@ ul.navbar-nav {
         -webkit-background-attachment: fixed;
         -moz-background-attachment: fixed;
         -o-background-attachment: fixed;
+
     }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .slogan {
-        width: 100%;
-        height: 100vh;
+    #slogan {
         background:
             var(--bdg),
             url(assets/img/imgslogan.jpg);
+        width: 100%;
+        height: 100vh;
         -webkit-background-position: center;
         background-position: center;
         -webkit-background-size: cover;
@@ -267,32 +276,144 @@ ul.navbar-nav {
         -webkit-background-attachment: fixed;
         -moz-background-attachment: fixed;
         -o-background-attachment: fixed;
+
     }
 }
 
 @media (min-width: 1200px) {
-    .slogan {
-    width: 100%;
-    height: 100vh;
-    background:
-        var(--bdg),
-        url(assets/img/imgslogan.jpg);
-    -webkit-background-position: center;
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    -webkit-background-repeat: no-repeat;
-    background-attachment: fixed;
-    -webkit-background-attachment: fixed;
-    -moz-background-attachment: fixed;
-    -o-background-attachment: fixed;
-    /* Script usado para substituir o background-attachment fixed
-    document.addEventListener("scroll", function(){
-    document.querySelector("main").style.backgroundPosition = '0 '+window.scrollY+'px';
- });
-    */
+    #slogan {
+        background:
+            var(--bdg),
+            url(assets/img/imgslogan.jpg);
+        width: 100%;
+        height: 100vh;
+        -webkit-background-position: center;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-background-repeat: no-repeat;
+        background-attachment: fixed;
+        -webkit-background-attachment: fixed;
+        -moz-background-attachment: fixed;
+        -o-background-attachment: fixed;
+
+    }
 }
+
+/* TEXT / slogan */
+h1.display-1 {
+    font-weight: 400;
+    font-style: italic;
+    text-shadow: 1px 1px 7px var(--po);
+}
+
+/* CARDS */
+.cards {
+    margin-top: -80px
+}
+
+/* card */
+p.card-text {
+    font-size: 1.2em;
+}
+
+.card.round {
+    margin-top: -20px;
+}
+
+.row.d-none .col-lg-4.mb-5 {
+    transition: 0.5s;
+}
+
+.row.d-none .col-lg-4.mb-5:hover {
+    scale: 105%;
+}
+
+.row.d-lg-none .col-lg-4.mb-5 {
+    transition: 0.5s;
+}
+
+.row.d-lg-none .col-lg-4.mb-5:hover {
+    scale: 108%;
+}
+
+@media (max-width: 575.98px) {
+    .row.g-0 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        -moz-object-fit: cover;
+        -webkit-object-fit: cover;
+        -o-object-fit: cover;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .row.g-0 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        -moz-object-fit: cover;
+        -webkit-object-fit: cover;
+        -o-object-fit: cover;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .row.g-0 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        -moz-object-fit: cover;
+        -webkit-object-fit: cover;
+        -o-object-fit: cover;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .card-body {
+        height: 385px;
+    }
+    .row.g-0 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        -moz-object-fit: cover;
+        -webkit-object-fit: cover;
+        -o-object-fit: cover;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-body {
+        height: 430px;
+    }
+    .row.g-0 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        -moz-object-fit: cover;
+        -webkit-object-fit: cover;
+        -o-object-fit: cover;
+    }
+}
+/* CLASSES SIMPLES */
+
+.m- {
+    margin: -50px;
+}
+
+.round {
+    border-radius: 13px;
+}
+
+.roundl {
+    border-radius: 13px 0px 0px 13px;
+}
+
+.roundr {
+    border-radius: 0px 13px 13px 0px;
 }
