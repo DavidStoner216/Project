@@ -28,6 +28,30 @@
         -webkit-object-fit: cover;
         -o-object-fit: cover;
     }
+    #slogan {
+        width: 100%;
+        height: 100vh;
+        background:
+            var(--bdg),
+            url(assets/img/imgslogansmall.jpg);
+        -webkit-background-position: center;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-background-repeat: no-repeat;
+        background-attachment: fixed;
+        -webkit-background-attachment: fixed;
+        -moz-background-attachment: fixed;
+        -o-background-attachment: fixed;
+        /* Script usado para substituir o background-attachment fixed
+        document.addEventListener("scroll", function(){
+        document.querySelector("main").style.backgroundPosition = '0 '+window.scrollY+'px';
+     });
+        */
+    }
 }
 
 /* Dispositivos small (telefones em modo paisagem, com 576px ou mais) */
@@ -48,6 +72,30 @@
         -moz-object-fit: cover;
         -webkit-object-fit: cover;
         -o-object-fit: cover;
+    }
+    #slogan {
+        width: 100%;
+        height: 100vh;
+        background:
+            var(--bdg),
+            url(assets/img/imgslogansmall.jpg);
+        -webkit-background-position: center;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-background-repeat: no-repeat;
+        background-attachment: fixed;
+        -webkit-background-attachment: fixed;
+        -moz-background-attachment: fixed;
+        -o-background-attachment: fixed;
+        /* Script usado para substituir o background-attachment fixed
+        document.addEventListener("scroll", function(){
+        document.querySelector("main").style.backgroundPosition = '0 '+window.scrollY+'px';
+     });
+        */
     }
 }
 
@@ -278,10 +326,10 @@ ul.navbar-nav {
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-background-repeat: no-repeat;
-    /* background-attachment: fixed;
+    background-attachment: fixed;
     -webkit-background-attachment: fixed;
     -moz-background-attachment: fixed;
-    -o-background-attachment: fixed; */
+    -o-background-attachment: fixed;
     /* Script usado para substituir o background-attachment fixed
     document.addEventListener("scroll", function(){
     document.querySelector("main").style.backgroundPosition = '0 '+window.scrollY+'px';
