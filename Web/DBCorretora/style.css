@@ -183,12 +183,12 @@ ul.navbar-nav {
 }
 
 @media (max-width: 575.98px) {
-    #slogan {
+    .slogan {
         width: 100%;
         height: 100vh;
         background:
             var(--bdg),
-            url(assets/img/imgslogan.png);
+            url(assets/img/imgslogansmall.jpg);
         -webkit-background-position: center;
         background-position: center;
         -webkit-background-size: cover;
@@ -205,7 +205,7 @@ ul.navbar-nav {
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-    #slogan {
+    .slogan {
         width: 100%;
         height: 100vh;
         background:
@@ -227,7 +227,7 @@ ul.navbar-nav {
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    #slogan {
+    .slogan {
         width: 100%;
         height: 100vh;
         background:
@@ -249,7 +249,7 @@ ul.navbar-nav {
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    #slogan {
+    .slogan {
         width: 100%;
         height: 100vh;
         background:
@@ -270,7 +270,8 @@ ul.navbar-nav {
     }
 }
 
-@media (min-width: 1200px) {#slogan {
+@media (min-width: 1200px) {
+    .slogan {
     width: 100%;
     height: 100vh;
     background:
@@ -293,4 +294,5 @@ ul.navbar-nav {
     document.querySelector("main").style.backgroundPosition = '0 '+window.scrollY+'px';
  });
     */
-}}
+}
+}
