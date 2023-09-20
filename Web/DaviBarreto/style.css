@@ -278,8 +278,10 @@ ul.navbar-nav {
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed;
     -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    -o-background-attachment: fixed; */
     /* Script usado para substituir o background-attachment fixed
     document.addEventListener("scroll", function(){
     document.querySelector("main").style.backgroundPosition = '0 '+window.scrollY+'px';
@@ -322,7 +324,7 @@ p.card-text {
     margin-top: -20px;
 }
 
-/* .row.d-none .col-lg-4.mb-5 {
+.row.d-none .col-lg-4.mb-5 {
     transition: 0.5s;
 }
 
@@ -336,4 +338,4 @@ p.card-text {
 
 .row.d-lg-none .col-lg-4.mb-5:hover {
     scale: 108%;
-} */
+}
