@@ -308,7 +308,7 @@ ul.navbar-nav {
 @media (max-width: 575.98px) {
     #slogan {
         width: 100%;
-        height: 100%;
+        height: 100vh;
         background:
             var(--bdg),url(assets/img/imgslogansmall.jpg);
         background-position: center;
