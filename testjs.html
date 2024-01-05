@@ -7,30 +7,81 @@
     <title>Bootstrap Site</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Crie uma aplicação web contendo um campo para entrada de texto (input text) e dois botões (buttons), sendo um botão
+                com a descrição "Adicionar" e outro com a descrição "Ordenar"<div class="container">
+                    <div class="row">
+                        <div class="col-12"><input id="itens" class="input-group-text" type="text"
+                            style="margin-top: 10px; width: 100%;" value="" for="adicionar"></div>
+                            <div class="col-6"><button onclick="add()" id="adicionar" for="inputitens" class="btn btn-success"
+                                style="width: 100%; margin-top: 10px;" type="button">Adicionar</button></div>
+                                <div class="col-6"><button onclick="order()" id="ordenar" class="btn btn-primary"
+                                    style="width: 100%; margin-top: 10px;" type="button">Ordenar</button></div>
+                                    <div class="col-12"><input id="lista" class="input-group-text" type="text" disabled
+                                        style="margin-top: 10px; width: 100%;" value=""></div>
+                                    </div>
+                                </div>
+    <script>let object = []; function add() { let objeto = document.getElementById('itens').value; if (objeto != '') { if (object.indexOf(objeto) !== -1) { alert('Item já adicionado'); } else { object.push(objeto); document.getElementById('itens').value = ''; document.getElementById('lista').value = object; console.log(object); } } else { alert('Informe um objeto válido') } } function order() { object.sort(); document.getElementById('lista').value = object }</script> -->
+    <!-- <div class="container">
+        <div class="row ">
+            <script>
+                for (let y = 1; y <= 10; y++) {
+                    document.write('<div class="col-sm-4 bg-light">')
+                    let z
+                    for (let x = 1; x <= 10; x++) {
+                        z = x * y
+                        document.write(y + ' x ' + x + " = " + z + '<br/>');
+                    }
+                    document.write('<hr>')
+                    document.write('</div>')
+                }
+            </script>
+        </div>
+    </div>
+    </div> -->
+    <!--Escreva um programa que imprima os números de 1 a 10. Calcule a soma de todos os números de 1 a 100.
+        <script>
+        let arr = []
+        for (let n1 = 1; n1 <= 100; n1++) {
+            arr.push(n1)
+            // document.writeln(n1)
+        }
+        let soma = arr.reduce(function (soma, i) {
+            return soma + i
+        })
+        document.writeln(soma)
+    </script> -->
+    <!--Crie um programa que peça ao usuário para inserir um número e imprima todos os números de 1 até o número inserido.
+        Faça um programa que calcula a média de uma lista de números fornecida pelo usuário.
+        <script>
+        let lista = Number(window.prompt('Insira um numero para obter uma lista ate ele'))
+        let num = 0
+        let arr = []
+        while (lista > num) {
+            let n = num++
+            n = arr.push(num)
+        }
+        let soma = arr.reduce(function (soma, numero) { return soma + numero })
+
+        document.writeln('<br>essa eh a lista '+arr)
+        document.writeln('<br>essa eh a soma '+soma)
+        document.writeln('<br>essa eh o tamanho '+arr.length)
+        let media = soma / arr.length
+        document.writeln('<br>essa eh a media '+media)
+    </script> -->
+    
+
+    
+    
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
         integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
         crossorigin="anonymous"></script>
-
-    <script>
-        let idade = prompt('Quantos anos você tem?');
-        if (idade >= 0 && idade < 15) {
-            document.write('Você tem ' + idade + ' anos e você é criança')
-        } else if (idade >= 15 && idade < 30) {
-            document.write('Você tem ' + idade + ' anos e você é Jovem')
-        }
-        else if (idade >= 30 && idade < 60) {
-            document.write('Você tem ' + idade + ' anos e você é Adulto')
-        } else {
-            document.write('Você tem ' + idade + ' anos e você é Idoso')
-        }
-
-    </script>
-</head>
-
-<body>
 </body>
 
 </html>
