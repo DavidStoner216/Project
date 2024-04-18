@@ -31,15 +31,16 @@ body {
     overflow-x: hidden;
 }
 
-.boxgt{
+.boxgt {
     display: block;
     width: 100%;
     height: 310px;
     margin-top: -300px;
     background: var(--boxgt);
 }
-.boxgb{
-    
+
+.boxgb {
+
     display: block;
     float: inherit;
     width: 100%;
@@ -74,6 +75,7 @@ ul.navbar-nav {
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link,
 .navbar-nav .nav-link.show {
+    font-family: Montserrat, sans-serif;
     font-size: 1.3em;
     color: var(--w);
     border-radius: 10px;
@@ -525,7 +527,6 @@ p.card-text {
 .cotacao {
     text-align: center;
     justify-content: center;
-
 }
 
 /* RESIDENCIAL */
@@ -546,4 +547,25 @@ p.card-text {
 
 .roundr {
     border-radius: 0px 13px 13px 0px;
+}
+
+a.nav-link {
+    border-bottom: #009FE3 0px solid
+}
+
+a.nav-link:after {
+    content: " ";
+    display: block;
+    margin: 4px auto 0;
+    width: 0;
+    height: 2px;
+    transition: .3s all ease;
+    background: #009FE3;
+}
+.nav-link a:after, ul li:hover a:after {
+    content: " ";
+    display: block;
+    margin: 4px auto 0;
+    width: 90%;
+    height: 2px
 }
