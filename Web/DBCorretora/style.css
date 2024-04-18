@@ -10,7 +10,8 @@
     --tl: #00F8E8;
     --gdt: linear-gradient(to top, #000000, 2%, #000000 20%, 30%, #00000000 100%);
     --bdg: linear-gradient(to top, hsl(0, 0%, 100%), 20%, hsla(209, 98%, 25%, 0.493) 59.42857265472412%, 79.71428632736206%, hsla(240, 100%, 2%, 0.394) 100%);
-    --boxg: linear-gradient(to top, #b4e7ff, 1%, #b4e7ff, 25%, #b4e7ff80, 60%, #b4e7ff00 100%);
+    --boxgt: linear-gradient(to top, #b4e7ff, 1%, #b4e7ff, 25%, #b4e7ff80, 60%, #b4e7ff00 100%);
+    --boxgb: linear-gradient(to bottom, #b4e7ff, 1%, #b4e7ff, 33%, #b4e7ff80, 66%, #b4e7ff00 100%);
     --po: rgba(0, 0, 0, 0.5);
 }
 
@@ -30,12 +31,21 @@ body {
     overflow-x: hidden;
 }
 
-#boxg {
+.boxgt{
     display: block;
     width: 100%;
-    height: 510px;
-    margin-top: -500px;
-    background: var(--boxg);
+    height: 310px;
+    margin-top: -300px;
+    background: var(--boxgt);
+}
+.boxgb{
+    
+    display: block;
+    float: inline-end;
+    width: 100%;
+    height: 310px;
+    margin-bottom: -300px;
+    background: var(--boxgb);
 }
 
 /* TOPO */
@@ -46,7 +56,7 @@ body {
 }
 
 h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
     text-shadow: #83838319 1px 1px 15px;
     font-size: 3.5em;
