@@ -41,6 +41,7 @@ body {
 .boxgb{
     
     display: block;
+    float: inline-end;
     width: 100%;
     height: 310px;
     margin-bottom: -300px;
