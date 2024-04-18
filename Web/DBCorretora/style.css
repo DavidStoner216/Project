@@ -10,7 +10,7 @@
     --tl: #00F8E8;
     --gdt: linear-gradient(to top, #000000, 2%, #000000 20%, 30%, #00000000 100%);
     --bdg: linear-gradient(to top, hsl(0, 0%, 100%), 20%, hsla(209, 98%, 25%, 0.493) 59.42857265472412%, 79.71428632736206%, hsla(240, 100%, 2%, 0.394) 100%);
-    --boxg: linear-gradient(to top, hsl(0, 0%, 100%), 25%, hsla(0, 0%, 100%, 0.5), 60%, hsla(0, 0%, 100%, 0) 100%);
+    --boxg: linear-gradient(to top, hsl(0, 0%, 100%), 1%, hsl(0, 0%, 100%), 25%, hsla(0, 0%, 100%, 0.5), 60%, hsla(0, 0%, 100%, 0) 100%);
     --po: rgba(0, 0, 0, 0.5);
 }
 
@@ -31,9 +31,10 @@ body {
 }
 
 #boxg {
+    display: block;
     width: 100%;
-    height: 300px;
-    margin-top: -300px;
+    height: 510px;
+    margin-top: -500px;
     background: var(--boxg) ;
         }
 
@@ -46,9 +47,10 @@ body {
         h1 {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             text-decoration: none;
+            text-shadow: #83838319 1px 1px 15px;
             font-size: 3.5em;
         }
-
+        
         .cordestaque {
             color: var(--bl);
         }
@@ -460,9 +462,12 @@ body {
         .cards {
             margin-top: -80px
         }
-
+        h2.card-title{
+            color: var(--bd);
+        }
         /* card */
         p.card-text {
+            color: var(--bd);
             font-size: 1.2em;
         }
 
