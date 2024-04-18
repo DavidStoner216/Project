@@ -10,7 +10,7 @@
     --tl: #00F8E8;
     --gdt: linear-gradient(to top, #000000, 2%, #000000 20%, 30%, #00000000 100%);
     --bdg: linear-gradient(to top, hsl(0, 0%, 100%), 20%, hsla(209, 98%, 25%, 0.493) 59.42857265472412%, 79.71428632736206%, hsla(240, 100%, 2%, 0.394) 100%);
-    --boxg: linear-gradient(to top, hsl(0, 0%, 100%), 70%, hsla(0, 0%, 100%, 0) 100%);
+    --boxg: linear-gradient(to top, hsl(0, 0%, 100%), 25%, hsla(0, 0%, 100%, 0.5), 60%, hsla(0, 0%, 100%, 0) 100%);
     --po: rgba(0, 0, 0, 0.5);
 }
 
@@ -32,8 +32,8 @@ body {
 
 #boxg {
     width: 100%;
-    height: 100px;
-    margin-top: -100px;
+    height: 300px;
+    margin-top: -300px;
     background: var(--boxg) ;
         }
 
