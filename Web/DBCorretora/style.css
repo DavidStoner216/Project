@@ -1,16 +1,16 @@
 :root {
-    --d: #ffffff;
+    --d: #b4e7ff;
     --bd: #00084d;
     --bdo: #000940dc;
     --bo: #024873;
     --b: #0511F2;
     --bl: #009FE3;
     --w: #ffffff;
-    --td: #15336D;
+    --td: #123a8a;
     --tl: #00F8E8;
     --gdt: linear-gradient(to top, #000000, 2%, #000000 20%, 30%, #00000000 100%);
     --bdg: linear-gradient(to top, hsl(0, 0%, 100%), 20%, hsla(209, 98%, 25%, 0.493) 59.42857265472412%, 79.71428632736206%, hsla(240, 100%, 2%, 0.394) 100%);
-    --boxg: linear-gradient(to top, hsl(0, 0%, 100%), 1%, hsl(0, 0%, 100%), 25%, hsla(0, 0%, 100%, 0.5), 60%, hsla(0, 0%, 100%, 0) 100%);
+    --boxg: linear-gradient(to top, #b4e7ff, 1%, #b4e7ff, 25%, #b4e7ff80, 60%, #b4e7ff00 100%);
     --po: rgba(0, 0, 0, 0.5);
 }
 
@@ -35,504 +35,505 @@ body {
     width: 100%;
     height: 510px;
     margin-top: -500px;
-    background: var(--boxg) ;
-        }
-
-        /* TOPO */
-        #topo {
-            background: var(--po);
-            color: var(--w);
-        }
-
-        h1 {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            text-decoration: none;
-            text-shadow: #83838319 1px 1px 15px;
-            font-size: 3.5em;
-        }
-        
-        .cordestaque {
-            color: var(--bl);
-        }
-
-        /* OFFCANVAS / navbar  */
-        ul.navbar-nav {
-            margin-left: auto;
-        }
-
-        .navbar-nav .nav-link.active,
-        .navbar-nav .nav-link,
-        .navbar-nav .nav-link.show {
-            font-size: 1.3em;
-            color: var(--w);
-            border-radius: 10px;
-            text-align: end;
-        }
-
-        .dropdown-menu {
-            margin: 0px 0px 0px auto;
-            width: 100px;
-            border-radius: 10px;
-            background: var(--po);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-
-        }
-
-        .dropdown-item {
-            transition: 0.3s;
-            text-align: center;
-            color: var(--w);
-
-        }
-
-        .dropdown-item:hover {
-            color: var(--bl);
-            background: var(--po);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-
-        }
-
-        /* BOTÃO / navbar */
-        #menu-bar {
-            z-index: 999;
-            width: 45px;
-            height: 45px;
-            float: inline-end;
-        }
-
-        .change #menu-bar,
-        .change #menu-bar1 {
-            z-index: 999;
-            position: relative;
-        }
-
-        .bar {
-            width: 100%;
-            display: block;
-            height: 4px;
-            background-color: var(--bl);
-            border-radius: 5px;
-        }
-
-        #bar1 {
-            transform: translateY(-7px);
-            transition: 1.5s ease-in-out;
-
-        }
-
-        #bar2 {
-            transition: 1.5s ease-in-out;
-            margin-left: auto;
-        }
-
-        #bar3 {
-            transform: translateY(7px);
-            transition: 1.5s ease-in-out;
-
-        }
-
-        .change#bar1 {
-            transform: translateY(3px) rotateZ(-45deg);
-        }
-
-        .change#bar2 {
-            opacity: 0;
-            width: 0px;
-        }
-
-        .change#bar3 {
-            transform: translateY(-3px) rotateZ(45deg);
-        }
-
-        .navbar-toggler:focus {
-            text-decoration: none;
-            outline: 0;
-            box-shadow: none;
-        }
-
-        /* SLOGAN BACKGROUND*/
-        @media (max-width: 575.98px) {
-            .offcanvas-collapse {
-                padding: 6rem 1.05rem 0 0rem;
-            }
-
-            #slogan {
-                background: var(--bdg),
-                url(assets/img/imgslogan.jpg);
-                width: 100%;
-                height: 1000px;
-                -webkit-background-position: center;
-                background-position: center;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-                background-repeat: no-repeat;
-                -webkit-background-repeat: no-repeat;
-                background-attachment: scroll;
-                -webkit-background-attachment: scroll;
-                -moz-background-attachment: scroll;
-                -o-background-attachment: scroll;
-            }
-
-            .row.g-0 img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                -moz-object-fit: cover;
-                -webkit-object-fit: cover;
-                -o-object-fit: cover;
-            }
-
-            #residencial {
-                background: url(assets/img/residencia.jpg);
-                width: 100%;
-                height: 100vh;
-                -webkit-background-position: center;
-                background-position: center;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-                background-repeat: no-repeat;
-                -webkit-background-repeat: no-repeat;
-                background-attachment: scroll;
-                -webkit-background-attachment: scroll;
-                -moz-background-attachment: scroll;
-                -o-background-attachment: scroll;
-
-            }
-        }
-
-        @media (min-width: 576px) and (max-width: 767.98px) {
-            .offcanvas-collapse {
-                padding: 6rem 1.05rem 0 0rem;
-            }
-
-            #slogan {
-                background: var(--bdg),
-                url(assets/img/imgslogan.jpg);
-                width: 100%;
-                height: 100vh;
-                -webkit-background-position: center;
-                background-position: center;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-                background-repeat: no-repeat;
-                -webkit-background-repeat: no-repeat;
-                background-attachment: scroll;
-                -webkit-background-attachment: scroll;
-                -moz-background-attachment: scroll;
-                -o-background-attachment: scroll;
-            }
-
-            .row.g-0 img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                -moz-object-fit: cover;
-                -webkit-object-fit: cover;
-                -o-object-fit: cover;
-            }
-
-            #residencial {
-                background: url(assets/img/residencia.jpg);
-                width: 100%;
-                height: 100vh;
-                -webkit-background-position: center;
-                background-position: center;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-                background-repeat: no-repeat;
-                -webkit-background-repeat: no-repeat;
-                background-attachment: scroll;
-                -webkit-background-attachment: scroll;
-                -moz-background-attachment: scroll;
-                -o-background-attachment: scroll;
-
-            }
-        }
-
-        @media (min-width: 768px) and (max-width: 991.98px) {
-            .offcanvas-collapse {
-                padding: 6rem 1.05rem 0 0rem;
-            }
-
-            #slogan {
-                background: var(--bdg),
-                url(assets/img/imgslogan.jpg);
-                width: 100%;
-                height: 100vh;
-                -webkit-background-position: center;
-                background-position: center;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-                background-repeat: no-repeat;
-                -webkit-background-repeat: no-repeat;
-                background-attachment: scroll;
-                -webkit-background-attachment: scroll;
-                -moz-background-attachment: scroll;
-                -o-background-attachment: scroll;
-            }
-
-            .row.g-0 img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                -moz-object-fit: cover;
-                -webkit-object-fit: cover;
-                -o-object-fit: cover;
-            }
-
-            #residencial {
-                background: url(assets/img/residencia.jpg);
-                width: 100%;
-                height: 100vh;
-                -webkit-background-position: center;
-                background-position: center;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-                background-repeat: no-repeat;
-                -webkit-background-repeat: no-repeat;
-                background-attachment: scroll;
-                -webkit-background-attachment: scroll;
-                -moz-background-attachment: scroll;
-                -o-background-attachment: scroll;
-            }
-
-        }
-
-
-        @media (max-width: 991.98px) {
-            .offcanvas-collapse {
-                position: fixed;
-                top: 0px;
-                /* Height of navbar */
-                bottom: 0;
-                left: 100%;
-                width: 50%;
-                text-align: end;
-                overflow-y: auto;
-                visibility: hidden;
-                background-color: var(--po);
-                backdrop-filter: blur(20px);
-                -webkit-backdrop-filter: blur(20px);
-                transition: transform .3s ease-in-out, visibility .3s ease-in-out;
-            }
-
-            .offcanvas-collapse.open {
-                visibility: visible;
-                transform: translateX(-100%);
-            }
-
-        }
-
-        @media (min-width: 992px) and (max-width: 1199.98px) {
-            .offcanvas-collapse {
-                padding: 0rem 0rem 0 0rem;
-            }
-
-            #slogan {
-                background: var(--bdg),
-                url(assets/img/imgslogan.jpg);
-                width: 100%;
-                height: 100vh;
-                -webkit-background-position: center;
-                background-position: center;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-                background-repeat: no-repeat;
-                -webkit-background-repeat: no-repeat;
-                background-attachment: fixed;
-                -webkit-background-attachment: fixed;
-                -moz-background-attachment: fixed;
-                -o-background-attachment: fixed;
-            }
-
-            .card-body {
-                height: 385px;
-            }
-
-            .row.g-0 img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                -moz-object-fit: cover;
-                -webkit-object-fit: cover;
-                -o-object-fit: cover;
-            }
-
-            #residencial {
-                background: url(assets/img/residencia.jpg);
-                width: 100%;
-                height: 100vh;
-                -webkit-background-position: center;
-                background-position: center;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-                background-repeat: no-repeat;
-                -webkit-background-repeat: no-repeat;
-                background-attachment: fixed;
-                -webkit-background-attachment: fixed;
-                -moz-background-attachment: fixed;
-                -o-background-attachment: fixed;
-
-            }
-        }
-
-        @media (min-width: 1200px) {
-            .offcanvas-collapse {
-                padding: 0rem 0 0 0rem;
-            }
-
-            #slogan {
-                background: var(--bdg),
-                url(assets/img/imgslogan.jpg);
-                width: 100%;
-                height: 100vh;
-                -webkit-background-position: center;
-                background-position: center;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-                background-repeat: no-repeat;
-                -webkit-background-repeat: no-repeat;
-                background-attachment: fixed;
-                -webkit-background-attachment: fixed;
-                -moz-background-attachment: fixed;
-                -o-background-attachment: fixed;
-            }
-
-            .card-body {
-                height: 430px;
-            }
-
-            .row.g-0 img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                -moz-object-fit: cover;
-                -webkit-object-fit: cover;
-                -o-object-fit: cover;
-            }
-
-            #residencial {
-                background: url(assets/img/residencia.jpg);
-                width: 100%;
-                height: 100vh;
-                -webkit-background-position: center;
-                background-position: center;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-                background-repeat: no-repeat;
-                -webkit-background-repeat: no-repeat;
-                background-attachment: fixed;
-                -webkit-background-attachment: fixed;
-                -moz-background-attachment: fixed;
-                -o-background-attachment: fixed;
-
-            }
-        }
-
-        /* TEXT / slogan */
-        h1.display-1 {
-            font-weight: 400;
-            font-style: italic;
-            text-shadow: 1px 1px 7px var(--po);
-        }
-
-        /* CARDS */
-        .cards {
-            margin-top: -80px
-        }
-        h2.card-title{
-            color: var(--bd);
-        }
-        /* card */
-        p.card-text {
-            color: var(--bd);
-            font-size: 1.2em;
-        }
-
-        .card.round {
-            margin-top: -20px;
-        }
-
-        .row.d-none .col-lg-4.mb-5,
-        .col-lg-12.mb-5 .row.g-0 {
-            transition: 0.5s;
-        }
-
-        .row.d-none .col-lg-4.mb-5:hover,
-        .col-lg-12.mb-5 .row.g-0:hover {
-            scale: 105%;
-        }
-
-        .col-lg-12.mb-5 .row.g-0 {
-            transition: 0.5s;
-        }
-
-        .col-lg-12.mb-5 .row.g-0:hover {
-            scale: 105%;
-        }
-
-        .form-select:focus {
-            text-decoration: none;
-            outline: 0;
-            box-shadow: none;
-        }
-
-        .form-select {
-            border-radius: 10px;
-            width: 200px;
-            margin: auto;
-            text-align: center;
-        }
-
-        .form-floating {
-            text-align: center;
-            border-radius: 10px;
-        }
-
-        .cotacao {
-            text-align: center;
-            justify-content: center;
-
-        }
-
-        /* RESIDENCIAL */
-
-        /* CLASSES SIMPLES */
-
-        .m- {
-            margin: -50px;
-        }
-
-        .round {
-            border-radius: 13px;
-        }
-
-        .roundl {
-            border-radius: 13px 0px 0px 13px;
-        }
-
-        .roundr {
-            border-radius: 0px 13px 13px 0px;
-        }
+    background: var(--boxg);
+}
+
+/* TOPO */
+#topo {
+    background: var(--po);
+    color: var(--w);
+    text-shadow: 2px 2px 2px var(--po);
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    text-shadow: #83838319 1px 1px 15px;
+    font-size: 3.5em;
+}
+
+.cordestaque {
+    color: var(--bl);
+}
+
+/* OFFCANVAS / navbar  */
+ul.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link,
+.navbar-nav .nav-link.show {
+    font-size: 1.3em;
+    color: var(--w);
+    border-radius: 10px;
+    text-align: end;
+}
+
+.dropdown-menu {
+    margin: 0px 0px 0px auto;
+    width: 100px;
+    border-radius: 10px;
+    background: var(--po);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+}
+
+.dropdown-item {
+    transition: 0.3s;
+    text-align: center;
+    color: var(--w);
+
+}
+
+.dropdown-item:hover {
+    color: var(--bl);
+    background: var(--po);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+}
+
+/* BOTÃO / navbar */
+#menu-bar {
+    z-index: 999;
+    width: 45px;
+    height: 45px;
+    float: inline-end;
+}
+
+.change #menu-bar,
+.change #menu-bar1 {
+    z-index: 999;
+    position: relative;
+}
+
+.bar {
+    width: 100%;
+    display: block;
+    height: 4px;
+    background-color: var(--bl);
+    border-radius: 5px;
+}
+
+#bar1 {
+    transform: translateY(-7px);
+    transition: 1.5s ease-in-out;
+
+}
+
+#bar2 {
+    transition: 1.5s ease-in-out;
+    margin-left: auto;
+}
+
+#bar3 {
+    transform: translateY(7px);
+    transition: 1.5s ease-in-out;
+
+}
+
+.change#bar1 {
+    transform: translateY(3px) rotateZ(-45deg);
+}
+
+.change#bar2 {
+    opacity: 0;
+    width: 0px;
+}
+
+.change#bar3 {
+    transform: translateY(-3px) rotateZ(45deg);
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+/* SLOGAN BACKGROUND*/
+@media (max-width: 575.98px) {
+    .offcanvas-collapse {
+        padding: 6rem 1.05rem 0 0rem;
+    }
+
+    #slogan {
+        background: var(--bdg),
+            url(assets/img/imgslogan.jpg);
+        width: 100%;
+        height: 1000px;
+        -webkit-background-position: center;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-background-repeat: no-repeat;
+        background-attachment: scroll;
+        -webkit-background-attachment: scroll;
+        -moz-background-attachment: scroll;
+        -o-background-attachment: scroll;
+    }
+
+    .row.g-0 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        -moz-object-fit: cover;
+        -webkit-object-fit: cover;
+        -o-object-fit: cover;
+    }
+
+    #residencial {
+        background: url(assets/img/residencia.jpg);
+        width: 100%;
+        height: 100vh;
+        -webkit-background-position: center;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-background-repeat: no-repeat;
+        background-attachment: scroll;
+        -webkit-background-attachment: scroll;
+        -moz-background-attachment: scroll;
+        -o-background-attachment: scroll;
+
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .offcanvas-collapse {
+        padding: 6rem 1.05rem 0 0rem;
+    }
+
+    #slogan {
+        background: var(--bdg),
+            url(assets/img/imgslogan.jpg);
+        width: 100%;
+        height: 100vh;
+        -webkit-background-position: center;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-background-repeat: no-repeat;
+        background-attachment: scroll;
+        -webkit-background-attachment: scroll;
+        -moz-background-attachment: scroll;
+        -o-background-attachment: scroll;
+    }
+
+    .row.g-0 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        -moz-object-fit: cover;
+        -webkit-object-fit: cover;
+        -o-object-fit: cover;
+    }
+
+    #residencial {
+        background: url(assets/img/residencia.jpg);
+        width: 100%;
+        height: 100vh;
+        -webkit-background-position: center;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-background-repeat: no-repeat;
+        background-attachment: scroll;
+        -webkit-background-attachment: scroll;
+        -moz-background-attachment: scroll;
+        -o-background-attachment: scroll;
+
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .offcanvas-collapse {
+        padding: 6rem 1.05rem 0 0rem;
+    }
+
+    #slogan {
+        background: var(--bdg),
+            url(assets/img/imgslogan.jpg);
+        width: 100%;
+        height: 100vh;
+        -webkit-background-position: center;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-background-repeat: no-repeat;
+        background-attachment: scroll;
+        -webkit-background-attachment: scroll;
+        -moz-background-attachment: scroll;
+        -o-background-attachment: scroll;
+    }
+
+    .row.g-0 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        -moz-object-fit: cover;
+        -webkit-object-fit: cover;
+        -o-object-fit: cover;
+    }
+
+    #residencial {
+        background: url(assets/img/residencia.jpg);
+        width: 100%;
+        height: 100vh;
+        -webkit-background-position: center;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-background-repeat: no-repeat;
+        background-attachment: scroll;
+        -webkit-background-attachment: scroll;
+        -moz-background-attachment: scroll;
+        -o-background-attachment: scroll;
+    }
+
+}
+
+
+@media (max-width: 991.98px) {
+    .offcanvas-collapse {
+        position: fixed;
+        top: 0px;
+        /* Height of navbar */
+        bottom: 0;
+        left: 100%;
+        width: 50%;
+        text-align: end;
+        overflow-y: auto;
+        visibility: hidden;
+        background-color: var(--po);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+    }
+
+    .offcanvas-collapse.open {
+        visibility: visible;
+        transform: translateX(-100%);
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .offcanvas-collapse {
+        padding: 0rem 0rem 0 0rem;
+    }
+
+    #slogan {
+        background: var(--bdg),
+            url(assets/img/imgslogan.jpg);
+        width: 100%;
+        height: 100vh;
+        -webkit-background-position: center;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-background-repeat: no-repeat;
+        background-attachment: fixed;
+        -webkit-background-attachment: fixed;
+        -moz-background-attachment: fixed;
+        -o-background-attachment: fixed;
+    }
+
+    .card-body {
+        height: 385px;
+    }
+
+    .row.g-0 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        -moz-object-fit: cover;
+        -webkit-object-fit: cover;
+        -o-object-fit: cover;
+    }
+
+    #residencial {
+        background: url(assets/img/residencia.jpg);
+        width: 100%;
+        height: 100vh;
+        -webkit-background-position: center;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-background-repeat: no-repeat;
+        background-attachment: fixed;
+        -webkit-background-attachment: fixed;
+        -moz-background-attachment: fixed;
+        -o-background-attachment: fixed;
+
+    }
+}
+
+@media (min-width: 1200px) {
+    .offcanvas-collapse {
+        padding: 0rem 0 0 0rem;
+    }
+
+    #slogan {
+        background: var(--bdg),
+            url(assets/img/imgslogan.jpg);
+        width: 100%;
+        height: 100vh;
+        -webkit-background-position: center;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-background-repeat: no-repeat;
+        background-attachment: fixed;
+        -webkit-background-attachment: fixed;
+        -moz-background-attachment: fixed;
+        -o-background-attachment: fixed;
+    }
+
+    .card-body {
+        height: 430px;
+    }
+
+    .row.g-0 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        -moz-object-fit: cover;
+        -webkit-object-fit: cover;
+        -o-object-fit: cover;
+    }
+
+    #residencial {
+        background: url(assets/img/residencia.jpg);
+        width: 100%;
+        height: 100vh;
+        -webkit-background-position: center;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-background-repeat: no-repeat;
+        background-attachment: fixed;
+        -webkit-background-attachment: fixed;
+        -moz-background-attachment: fixed;
+        -o-background-attachment: fixed;
+
+    }
+}
+
+/* TEXT / slogan */
+h1.display-1 {
+    font-weight: 400;
+    font-style: italic;
+    text-shadow: 1px 1px 7px var(--po);
+}
+
+/* CARDS */
+.cards {}
+
+h2.card-title {
+    color: var(--td);
+}
+
+/* card */
+p.card-text {
+    color: var(--td);
+    font-size: 1.2em;
+}
+
+.card.round {
+    margin-top: -20px;
+}
+
+.row.d-none .col-lg-4.mb-5,
+.col-lg-12.mb-5 .row.g-0 {
+    transition: 0.5s;
+}
+
+.row.d-none .col-lg-4.mb-5:hover,
+.col-lg-12.mb-5 .row.g-0:hover {
+    scale: 105%;
+}
+
+.col-lg-12.mb-5 .row.g-0 {
+    transition: 0.5s;
+}
+
+.col-lg-12.mb-5 .row.g-0:hover {
+    scale: 105%;
+}
+
+.form-select:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-select {
+    border-radius: 10px;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+}
+
+.form-floating {
+    text-align: center;
+    border-radius: 10px;
+}
+
+.cotacao {
+    text-align: center;
+    justify-content: center;
+
+}
+
+/* RESIDENCIAL */
+
+/* CLASSES SIMPLES */
+
+.m- {
+    margin: -50px;
+}
+
+.round {
+    border-radius: 13px;
+}
+
+.roundl {
+    border-radius: 13px 0px 0px 13px;
+}
+
+.roundr {
+    border-radius: 0px 13px 13px 0px;
+}
