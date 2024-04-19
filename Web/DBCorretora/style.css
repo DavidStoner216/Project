@@ -82,6 +82,14 @@ ul.navbar-nav {
     text-align: end;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(255, 255, 255);
+}
+
 .dropdown-menu {
     margin: 0px 0px 0px auto;
     width: 100px;
@@ -109,18 +117,17 @@ ul.navbar-nav {
 
 /* BOTÃO / navbar */
 #menu-bar {
+    padding: 0px;
     z-index: 999;
     width: 45px;
     height: 45px;
     float: inline-end;
 }
 
-.change #menu-bar,
-.change #menu-bar1 {
+.change {
     z-index: 999;
     position: relative;
 }
-
 .bar {
     width: 100%;
     display: block;
@@ -168,7 +175,7 @@ ul.navbar-nav {
 /* SLOGAN BACKGROUND*/
 @media (max-width: 575.98px) {
     .offcanvas-collapse {
-        padding: 6rem 1.05rem 0 0rem;
+        padding: 6rem 1.05rem 0 12rem;
     }
 
     #slogan {
@@ -221,8 +228,9 @@ ul.navbar-nav {
 
 @media (min-width: 576px) and (max-width: 767.98px) {
     .offcanvas-collapse {
-        padding: 6rem 1.05rem 0 0rem;
+        padding: 6rem 1.05rem 0 12rem;
     }
+    
 
     #slogan {
         background: var(--bdg),
@@ -274,7 +282,7 @@ ul.navbar-nav {
 
 @media (min-width: 768px) and (max-width: 991.98px) {
     .offcanvas-collapse {
-        padding: 6rem 1.05rem 0 0rem;
+        padding: 6rem 1.05rem 0 12rem;
     }
 
     #slogan {
@@ -354,6 +362,24 @@ ul.navbar-nav {
     .offcanvas-collapse {
         padding: 0rem 0rem 0 0rem;
     }
+    a.nav-link:after {
+        content: " ";
+        display: block;
+        margin: 4px auto 0;
+        width: 0;
+        height: 2px;
+        transition: .3s all ease;
+        background: #009FE3;
+    }
+    
+    .nav-link a:after,
+    ul li:hover a:after {
+        content: " ";
+        display: block;
+        margin: 4px auto 0;
+        width: 90%;
+        height: 2px
+    }
 
     #slogan {
         background: var(--bdg),
@@ -411,6 +437,24 @@ ul.navbar-nav {
     .offcanvas-collapse {
         padding: 0rem 0 0 0rem;
     }
+    a.nav-link:after {
+    content: " ";
+    display: block;
+    margin: 4px auto 0;
+    width: 0;
+    height: 2px;
+    transition: .3s all ease;
+    background: #009FE3;
+}
+
+.nav-link a:after,
+ul li:hover a:after {
+    content: " ";
+    display: block;
+    margin: 4px auto 0;
+    width: 90%;
+    height: 2px
+}
 
     #slogan {
         background: var(--bdg),
@@ -519,6 +563,13 @@ p.card-text {
     text-align: center;
 }
 
+.form-floating>.form-control,
+.form-floating>.form-control-plaintext,
+.form-floating>.form-select {
+    height: calc(1.5rem + calc(var(--bs-border-width)* 2));
+    min-height: calc(1.5rem + calc(var(--bs-border-width)* 2));
+}
+
 .form-floating {
     text-align: center;
     border-radius: 10px;
@@ -547,25 +598,4 @@ p.card-text {
 
 .roundr {
     border-radius: 0px 13px 13px 0px;
-}
-
-a.nav-link {
-    border-bottom: #009FE3 0px solid
-}
-
-a.nav-link:after {
-    content: " ";
-    display: block;
-    margin: 4px auto 0;
-    width: 0;
-    height: 2px;
-    transition: .3s all ease;
-    background: #009FE3;
-}
-.nav-link a:after, ul li:hover a:after {
-    content: " ";
-    display: block;
-    margin: 4px auto 0;
-    width: 90%;
-    height: 2px
 }

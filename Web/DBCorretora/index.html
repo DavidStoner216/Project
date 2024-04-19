@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
@@ -36,10 +36,10 @@
                     <img src="assets/svg/Ativo 7.svg" style="height: 60px" class="d-none d-lg-block">
                     <img src="assets/svg/Ativo 6.svg" style="height: 60px" alt="" class="d-lg-none">
                 </a>
-                <button id="menu-bar" class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
-                    <div id="bar1" class="bar"></div>
-                    <div id="bar2" class="bar"></div>
-                    <div id="bar3" class="bar"></div>
+                <button id="menu-bar" class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas">
+                        <div id="bar1" class="bar"></div>
+                        <div id="bar2" class="bar"></div>
+                        <div id="bar3" class="bar"></div>
                 </button>
                 <div class="navbar-collapse offcanvas-collapse" id="navbar">
                     <ul class="navbar-nav ml-auto mb-lg-0">
@@ -79,52 +79,55 @@
             <div class="container align-self-center d-none d-xl-flex">
                 <div class="row">
                     <div class="col-lg-5">
-                        <h1 class="mt-6 mb-5">Especialista em proteger <span class="cordestaque">seus sonhos</span> hoje</h1>
+                        <h1 class="mt-6 mb-5">Especialista em proteger <span class="cordestaque">seus sonhos</span> hoje
+                        </h1>
                     </div>
                     <div class="col-lg-6 mt-5-md">
                         <div class="cotacao">
                             <h2 class="mt-3 pt-3 pl-5 pr-5">SOLICITE UMA COTAÇÃO GRÁTIS</h2>
-                                <h5>
-                                    Cobertura em todo Brasil,
-                                    estamos sempre perto de você.
-                                </h5>
-                                <div class="form-floating">
-                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                      <option selected>Seguro Auto</option>
-                                      <option value="1">Bike</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                    </select>
-                                    <button class="btn mt-2 bg-info px-3" for="floatingSelect">Fazer cotação</button>
-                                  </div>
-                            
-                        </div> 
+                            <h5>
+                                Cobertura em todo Brasil,
+                                estamos sempre perto de você.
+                            </h5>
+                            <div class="form-floating">
+                                <select class="form-select" id="floatingSelect"
+                                    aria-label="Floating label select example">
+                                    <option selected>Seguro Auto</option>
+                                    <option value="1">Bike</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <button class="btn mt-2 bg-info px-3" for="floatingSelect">Fazer cotação</button>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="container align-self-center d-xl-none">
                 <div class="row">
                     <div class="col-md-6">
-                        <h1 class="mt-5 mb-5 pt-3">Especialista em proteger <span class="cordestaque">seus sonhos</span> hoje</h1>
+                        <h1 class="mt-5 mb-5 pt-3">Especialista em proteger <span class="cordestaque">seus sonhos</span>
+                            hoje</h1>
                     </div>
                     <div class="col-md-6 mt-5-md">
                         <div class="cotacao">
                             <h2 class="mt-5 pt-5 pl-5 pt-5 pr-5">SOLICITE UMA COTAÇÃO GRÁTIS</h2>
-                                <h5>
-                                    Cobertura em todo Brasil,
-                                    estamos sempre perto de você.
-                                </h5>
-                                <div class="form-floating">
-                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                      <option selected>Seguro Auto</option>
-                                      <option value="1">Bike</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                    </select>
-                                    <button class="btn" for="floatingSelect">Fazer cotação</button>
-                                  </div>
-                            
-                        </div> 
+                            <h5>
+                                Cobertura em todo Brasil,
+                                estamos sempre perto de você.
+                            </h5>
+                            <div class="form-group">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Seguro Auto</option>
+                                    <option value="1">Seguro Bike</option>
+                                    <option value="2">Seguro Vida</option>
+                                    <option value="3">Seguro Empresarial</option>
+                                  </select>
+                                <button class="btn mt-2 bg-info px-3" for="floatingSelect">Fazer cotação</button>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -280,7 +283,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
